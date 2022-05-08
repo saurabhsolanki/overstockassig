@@ -1,0 +1,340 @@
+*{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#nav{
+    width: 100%;
+    /* position: fixed; */
+    border: none;
+    
+    }
+
+#one{
+    display: flex;
+    font-size: 15px;
+    background-color: rgb(247, 247, 247);
+    /* align-items: flex-start; */
+
+}
+#flag{
+    height: 20px;
+    border-radius: 100%;
+    /* border: 1px solid red; */
+    margin-top: 8px;
+}
+        #one>p{
+            font-size: 15px;
+            margin: 10px;
+        }
+
+
+
+#two{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* margin: auto; */
+}
+#logo>img{
+    height: 40px;
+    width: auto;
+    margin-left: -20px;
+}
+#two>div:nth-child(1){
+    width: 10%;
+    /* border: 1px solid red; */
+}
+#two>div:nth-child(2){
+
+    width: 60%;
+}
+#two>div>input{
+    width: 100%;
+    /* padding: 10px; */
+}
+
+#two>div:nth-child(3){
+    width: auto;
+    display: flex;
+}
+#two-img img{
+    height: 30px;
+    margin: 10px;
+}
+#gotopayment{
+    cursor: pointer;
+}
+
+
+
+#three{
+    width: auto;
+    font-size: 16px;
+    margin: 0px;
+    /* font-weight: bold; */
+    border: 1px solid rgb(199, 197, 197);
+    /* background-color: rgb(235, 234, 234); */
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+}
+#three>a{
+    /* margin: 10px; */
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#three>a:hover{
+    border-bottom: 2px solid black;
+}
+#three>a:nth-last-child(1){
+    color: rgb(207, 77, 77);
+}
+
+/* footer one  */
+#footerone{
+   
+    background-color: #444;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: small;
+    border: none;
+
+}
+#footerone h3{
+    color: white;
+    text-align:left;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footerone p{
+    color: white;
+    /* margin: auto; */
+    text-align:left;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerone>div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* footer two */
+#footertwo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44, 43, 43);
+    padding: 30px;
+    color: white;
+
+    /* width: 100%; */
+    border: none;
+}
+
+#last{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+img,p{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div1 css */
+
+#heading{
+    width: 98%;
+    margin: auto;
+}
+
+#locate{
+    display: flex;
+}
+
+/* div2 css */
+#div2>h2{
+    text-align: center;
+}
+#catagory{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(6,auto);
+    
+    
+    justify-content: space-around;
+}
+.catpr{
+    
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.catpr>img{
+    width: 100%;
+    height: 200px;
+}
+
+  /* product div */
+#prosec{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+#scroll{
+    width: 20%;
+    height: 500px;
+    overflow-x: hidden;
+    position: sticky;
+    top: 0px; 
+}
+
+#scroll>div{
+    height: 200px;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    width: 75%;
+    height: auto;
+    
+    gap: 20px;
+}
+.card{
+    width: 100%;
+    border: 1px solid rgb(187, 183, 183);
+    margin: auto;  
+}
+.card>h4{
+    margin-left: 10px;
+}
+.card>p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.star{
+    height: 20px;
+    width: 30%;
+    margin-left: 10px;
+}
+.primg{
+    width: 100%;
+    height: auto;
+}
+#rating{
+    display: flex;
+}
+#sort{
+    display: flex;
+    margin-right: 15px;
+    justify-content: end;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#select{
+    width: 15%;
+    font-size: 15px;  
+}
+
+#scroller{
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    border: 1px solid rgb(240, 230, 230);
+    cursor: pointer;
+}
+button{
+    
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    border: 0px;
+}
+button:hover{
+   background-color: black;
+   color: white;
+   cursor: pointer;
+}
+#btn{
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#mn{
+   width: 100%;
+   justify-content: space-around;
+   display: flex;
+}
+#mn>:nth-child(1){
+    
+    width: 20%;
+    height: 300px;
+    
+}
+#mn>:nth-child(2){
+   
+    width: 75%;
+    height: auto;
+    
+}
+#btmcard{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    cursor: pointer;
+   
+}
+#btmcardC{
+    display: flex;
+    width: 49%;
+    height: auto;
+    border: rgb(165, 161, 161) 1px solid;    
+}
+#btmcardC>:nth-child(1){
+   height: auto;
+   margin-bottom: -4px;
+    
+}
+#btmcardC>div>h3{
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#btmcardC>div>p{
+    font-size: 18px;
+   margin-left: 10px;
+   margin-top: -30px;
+}
+#btmcardC>:nth-child(2)>img{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#lastline{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(212, 203, 203);
+}
