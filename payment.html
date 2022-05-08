@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        form {
+            width: 400px;
+            display: grid;
+            gap: 20px;
+            font-family: sans-serif;
+            padding: 10px 30px 30px;
+            margin: auto;
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        #payment {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            padding-bottom: 20px;
+            margin-bottom:30px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            height: 55px;
+            border-radius: 5px;
+            border: rgba(128, 128, 128, 0.23) solid 0.1px;
+            padding: 0px 20px;
+            font-size: 16.4px;
+            font-family:sans-serif;
+        }
+
+        input:last-child {
+            height: 55px;
+            /* color: rgb(29, 20, 20); */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>  
+    <!-- navbar  -->
+    <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+           <a href="https://www.overstock.com/intlcountryselect/">  <img id="flag" src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc" src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png" alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart" src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png" alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
+            <a href="">Decor</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
+            <a href="">Outdorr</a>
+            
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+    </div>
+
+    <!-- payment body  -->
+    <div id="payment">
+        <form id="form">
+            <h2>Payment Details</h2>
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Enter Name" minlength="5" required />
+            <label>Card Number</label>
+            <input id="cnumber" type="number" placeholder="Enter Card Number" required />
+            <label>CVV</label>
+            <input id="cvv" type="number" placeholder="Enter CVV" required />
+            <label>Expiry Date</label>
+            <input id="expiryDate"  type="month" required />
+            <input id="sub" type="submit" value="SUBMIT" />
+        </form>
+    </div>
+</body>
+</html>
+<script src="home.js">
+    document.querySelector("form").addEventListener("submit",paymentFunction);
+    function paymentFunction(){
+        event.preventDefault();
+        var name = document.querySelector("#name").value;
+        var cardNo = document.querySelector("#cnumber").value;
+        var cvv = document.querySelector("#cvv").value;
+        if(cardNo.length!==16){
+            alert("Error! Enter valid card details.")
+        }
+        else if(cvv.length!==3){
+            alert("Error! Enter valid card details.")
+        }
+        else {
+            window.location.href="OTP.html"
+        }
+    }
+    function cartPage() {
+    window.location.href="cart.html"
+  }
+   function userPage() {
+    window.location.href="user.html"
+  }
+  var token = localStorage.getItem("token");
+  var user1 = document.querySelector("#bar");
+  if(token){
+    var men = document.createElement("p")
+    men.setAttribute("onclick","mensPage()")
+    men.innerText="Men"
+    var women = document.createElement("p")
+    women.setAttribute("onclick","womensPage()")
+    women.innerText="Women"
+    var user = document.createElement("p")
+    user.setAttribute("onclick","userPage()")
+    user.innerText="User"
+    var cart = document.createElement("p")
+    cart.setAttribute("onclick","cartPage()")
+    cart.innerText="Cart"
+    user1.innerHTML="";
+    user1.append(men,women,user,cart);
+  }
+</script>

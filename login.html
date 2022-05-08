@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        form {
+            width: 400px;
+            display: grid;
+            gap: 20px;
+            font-family: sans-serif;
+            padding: 10px 30px 30px;
+            margin: auto;
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        #login {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            height: 55px;
+            border-radius: 5px;
+            border: rgba(128, 128, 128, 0.23) solid 0.1px;
+            padding: 0px 20px;
+            font-size: 16.4px;
+        }
+
+        input:last-child {
+            height: 55px;
+            color: grey;
+        }
+
+        #sub {
+            background-color: teal;
+            color: white;
+            cursor: pointer;
+        }
+
+        #accDoesntExists {
+            text-align: center;
+            font-size: 19px;
+            font-family: sans-serif;
+        }
+
+        #accDoesntExists>a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+            <a href="https://www.overstock.com/intlcountryselect/"> <img id="flag"
+                    src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+                <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc"
+                    src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png"
+                    alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart"
+                    src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png"
+                    alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
+            <a href="">Decor</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
+            <a href="">Outdorr</a>
+
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+    </div>
+    <div id="login">
+        <form>
+            <h2>Login</h2>
+            <input id="email" type="email" placeholder="Enter Email" required />
+            <input id="password" type="password" placeholder="Enter Password" required />
+            <input id="sub" type="submit" value="LOGIN" />
+        </form>
+        <p id="accDoesntExists">Don't have an account? <a href="signup.html">Create New Account</a></p>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    document.querySelector("form").addEventListener("submit", myFunction);
+    var userDataArr = JSON.parse(localStorage.getItem("userData")) || [];
+
+
+    function myFunction() {
+
+        event.preventDefault();
+        var flag = false;
+        var email = document.querySelector("#email").value;
+        var password = document.querySelector("#password").value;
+        userDataArr.forEach(function (ele) {
+            if (ele.email == email && ele.password == password) {
+                storeUserData(ele);
+                flag = true;
+                name=ele.name
+
+            }
+            // console.log(ele);
+        })
+
+
+        function storeUserData(ele) {
+            localStorage.setItem("login", JSON.stringify(ele));
+        }
+
+        if (flag) {
+            alert("Successfully logged in!");
+            var token = Math.random();
+            localStorage.setItem("token", token);
+            window.location.href = "home.html"
+
+        }
+        else {
+            alert("Please enter correct email or password!");
+        }
+
+    }
+
+
+    // payment click
+    document.querySelector("#gotopayment").addEventListener("click", mypay)
+    function mypay() {
+        window.location.href = "payment.html"
+    }
+
+
+
+
+    // var form=document.querySelector("form")
+    // var userData=JSON.parse(localStorage.getItem("userData"))
+
+    // console.log(userData);
+
+    // form.addEventListener("submit",function(event){
+    //     event.preventDefault()
+
+    //     var data={
+    //         email:form.email.value,
+    //         password:form.password.value
+    //     }
+
+    //     // console.log(data)
+    //     if(userData==null)
+    //     {
+    //         alert("Pleases create Account First")
+    //     }
+    //     else if(userData.email==data.email && userData.password==data.password)
+    //     {
+    //         alert("Login Successful")
+    //         localStorage.setItem("login",JSON.stringify(userData))
+    //         window.location.href="home.html"
+    //     }
+        // else{
+        //     alert("user does not exixst")
+        // }
+    // })
+</script>
