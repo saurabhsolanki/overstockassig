@@ -427,12 +427,12 @@ img,p{
         </div>
 
         <div id="three">
-            <a href="">Furnitue</a>
-            <a href="">Rugs</a>
+            <a href="LRFurniture.html">Furnitue</a>
+            <a href="rugs.html">Rugs</a>
             <a href="">Decor</a>
-            <a href="">Bed & Bath</a>
-            <a href="">Home Improvement</a>
-            <a href="">Kitchen</a>
+            <a href="BathroomVanityProd.html">Bed & Bath</a>
+            <a href="Overstock(HomeImprovements).html">Home Improvement</a>
+            <a href="Kitchen.html">Kitchen</a>
             <a href="">Outdorr</a>
             
             <a href="">Jewelry</a>
@@ -660,4 +660,34 @@ function myCart(){
     
 }
 
+document.getElementById("logo").addEventListener("click",mylogo)
+
+function mylogo(){
+    window.location.href="home.html"
+}
+
+// account page
+document.getElementById("acc").addEventListener("click",myacc)
+
+function myacc(){
+    window.location.href="signup.html"
+}
+
+// whislistpage
+document.getElementById("whislist").addEventListener("click",mywhis)
+
+function mywhis(){
+    window.location.href=""
+}
+
+//cart page
+document.getElementById("cart").addEventListener("click",mycart)
+function mycart(){
+    window.location.href=""
+}
+// payment page
+document.querySelector("#gotopayment").addEventListener("click",mypay)
+function mypay(){
+    window.location.href="payment.html"
+}
 </script>

@@ -36,7 +36,7 @@ function mypay(){
 
 document.getElementById("first").addEventListener("click",myfirst)
 function myfirst(){
-    window.location.href=""
+    window.location.href="AllProducts.html"
 }
 
 
@@ -44,7 +44,7 @@ function myfirst(){
 //second
 document.getElementById("secbox").addEventListener("click",secbox)
 function secbox(){
-    window.location.href=""
+    window.location.href="BathroomVanityProd.html"
 }
 
 
@@ -52,28 +52,28 @@ function secbox(){
 // third
 document.getElementById("third").addEventListener("click", mythird)
 function mythird(){
-    window.location.href=""
+    window.location.href="rugs.html"
 }
 
 
 // /fourth
 document.getElementById('fourth').addEventListener("click",myfourth)
 function myfourth(){
-    window.location.href=""
+    window.location.href="Kitchen.html"
 }
 
 
 //fifth
 document.getElementById("fifthbox").addEventListener("click",myfifth)
 function myfifth(){
-    window.location.href=""
+    window.location.href="rugs.html"
 }
 
 
 //sixth
 document.getElementById("sixth").addEventListener("click",mysixth)
 function mysixth(){
-    window.location.href=""
+    window.location.href="LRFurniture.html"
 }
 
 
@@ -81,11 +81,11 @@ function mysixth(){
 //seven
 document.getElementById("sevenbox").addEventListener("click",myseven)
 function myseven(){
-    window.location.href=""
+    window.location.href="AllProducts.html"
 }
 
 // btn 
 document.getElementById("btn").addEventListener("click",mybtn)
 function mybtn(){
-    window.location.href=""
+    window.location.href="AllProducts.html"
 }
