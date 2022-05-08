@@ -642,12 +642,12 @@ img,p{
         </div>
 
         <div id="three">
-            <a href="LRFurniture.html">Furnitue</a>
-            <a href="rugs.html">Rugs</a>
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
             <a href="">Decor</a>
-            <a href="BathroomVanityProd.html">Bed & Bath</a>
-            <a href="Overstock(HomeImprovements).html">Home Improvement</a>
-            <a href="Kitchen.html">Kitchen</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
             <a href="">Outdorr</a>
             
             <a href="">Jewelry</a>
@@ -772,8 +772,9 @@ img,p{
 
             <div id="mid">
             <div>
-                <img src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_1.jpg?imwidth=400&impolicy=medium" width="400" height="280">
+                <img id="bathvan" src="https://ak1.ostkcdn.com/img/mxc/03232020-gnp-homeimprovment-PopCat_1.jpg?imwidth=400&impolicy=medium" width="400" height="280">
                 <h4>Bathroom Vanities</h4>
+
             </div>
 
             <div>
@@ -1108,39 +1109,16 @@ img,p{
          <div>Ship to:</div>
         </div>
     </footer>
-
 </body>
 </html>
 
 <script>
-    document.getElementById("logo").addEventListener("click",mylogo)
 
-function mylogo(){
-    window.location.href="home.html"
-}
+    document.querySelector("#bathvan").addEventListener("click",myFunc)
+    
+    function myFunc()
+    {
+        window.location.href="AllProducts.html"
+    }
 
-// account page
-document.getElementById("acc").addEventListener("click",myacc)
-
-function myacc(){
-    window.location.href="signup.html"
-}
-
-// whislistpage
-document.getElementById("whislist").addEventListener("click",mywhis)
-
-function mywhis(){
-    window.location.href=""
-}
-
-//cart page
-document.getElementById("cart").addEventListener("click",mycart)
-function mycart(){
-    window.location.href=""
-}
-// payment page
-document.querySelector("#gotopayment").addEventListener("click",mypay)
-function mypay(){
-    window.location.href="payment.html"
-}
 </script>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+    <title>OverstockProduct</title>
+
+    <style>
+
+        /* header */
+        #nav{
+        width: 100%;
+        /* position: fixed; */
+        border: none;
+    
+        }
+
+#one{
+    display: flex;
+    font-size: 15px;
+    background-color: rgb(247, 247, 247);
+    /* align-items: flex-start; */
+
+}
+#flag{
+    height: 20px;
+    border-radius: 100%;
+    /* border: 1px solid red; */
+    margin-top: 8px;
+}
+#one>p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+
+#two{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* margin: auto; */
+}
+#logo>img{
+    height: 40px;
+    width: auto;
+    margin-left: -20px;
+}
+#two>div:nth-child(1){
+    width: 10%;
+    /* border: 1px solid red; */
+}
+#two>div:nth-child(2){
+
+    width: 60%;
+}
+#two>div>input{
+    width: 100%;
+    /* padding: 10px; */
+}
+
+#two>div:nth-child(3){
+    width: auto;
+    display: flex;
+}
+#two-img img{
+    height: 30px;
+    margin: 10px;
+}
+#gotopayment{
+    cursor: pointer;
+}
+
+
+
+#three{
+    width: auto;
+    font-size: 16px;
+    margin: 0px;
+    /* font-weight: bold; */
+    border: 1px solid rgb(199, 197, 197);
+    /* background-color: rgb(235, 234, 234); */
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+}
+#three>a{
+    /* margin: 10px; */
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#three>a:hover{
+    border-bottom: 2px solid black;
+}
+#three>a:nth-last-child(1){
+    color: rgb(207, 77, 77);
+}
+
+/* ---------------- */
+
+/* footer */
+#footerone{
+    background-color: #444;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: small;
+    border: none;
+
+}
+#footerone h3{
+    color: white;
+    text-align:left;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footerone p{
+    color: white;
+    /* margin: auto; */
+    text-align:left;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerone>div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* footer two */
+#footertwo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44, 43, 43);
+    padding: 30px;
+    color: white;
+
+    /* width: 100%; */
+    border: none;
+}
+
+#last{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+img,p{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ---------------- */
+
+
+        *{
+            font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        
+        #main
+        {
+            margin: auto;
+            width: 80%;
+
+        }
+
+
+        #prodD
+        {
+            margin-top: 20px;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1, 500px);
+            
+        }
+
+      
+        #stars
+        {
+            margin-left: 20px;
+            margin-bottom: -10px;
+        }
+        .checked
+        {
+            color: orange;
+        }
+
+        #reviews
+        {
+            display: grid;
+            grid-template-columns: repeat(2,120px);
+            grid-template-rows: repeat(1, 30px);
+           
+        }
+
+    
+        #btns
+        {
+            margin-top: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            justify-content: space-between;
+            display: flex;
+            padding-right: 50px;        
+        }
+
+
+        #sets
+        {
+            width: 220px;
+            height: 30px;
+            display:flex;
+            cursor: pointer;
+        }
+
+
+        .two
+        {
+            width: 180px;
+            height: 30px;
+            background-color: #227553;
+            color: white;
+            font-weight: 200;
+            border: 3px;
+            cursor: pointer;
+        }
+
+
+    
+        #favv
+        {
+            margin-top: 7px;
+            margin-left: 20px;
+            border: 1px solid grey;
+            width: 100px;
+            height: 15px;
+            display: flex;
+            height: 20px;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            background-color: #f9fafb;
+            border-radius: 3px;
+        }
+
+            #social
+            {
+            width: 200px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1, 50px);
+     
+            }
+
+            #social > img
+            {
+                border: 1px solid grey;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+
+            #dns
+            {
+                margin-top: 30px;
+                width: 100%;
+                height: auto;
+                gap: 10px;
+            }
+
+
+            #searched
+            {
+            margin-left: 10px;
+            margin-top: 20px;
+            width: 82%;
+            display: grid;
+            grid-template-columns: repeat(4,250px);
+            grid-template-rows: repeat(2, 40px);
+            border: 1px solid rgb(214, 214, 214);
+            }
+
+            #searched > div
+            {
+                justify-content: center;
+                color: #2a7ab0;
+                cursor: pointer;
+                font-weight: 800;
+                font-size: 14px;
+            }
+
+            /* domcss */
+           
+        *{
+            font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        #propage{
+            display: flex;
+            width: 85%;
+            gap: 20px;
+          
+        }
+        #propage>:nth-child(1){
+            width: 40%;
+            height: auto;
+            
+        }
+        #propage>:nth-child(1)>img{
+            height: auto;
+            width: 100%;
+        }
+        #propage>:nth-child(2){
+            width: 40%;
+            height: auto;
+            
+           
+        }
+        #propage>:nth-child(2)>:nth-child(1){
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        #propage>:nth-child(2)>:nth-child(3){
+            font-size: 22px;
+            margin-left: 20px;
+        }
+        #propage>:nth-child(2)>img{
+            height: 30px;
+            width: 30%;
+            margin-left: 20px;
+        }
+        #propage>:nth-child(2)>div{
+            margin-bottom: 30px;
+        }
+        #propage>:nth-child(2)>div>select{
+            width: 40%;
+            height: 35px;
+            text-align: center;
+            margin-left: 20px;
+            border:1px solid rgb(216, 212, 212);
+            border-radius: 5px;
+        }
+        #propage>:nth-child(2)>div>button{
+            width: 40%;
+            height: 35px;
+            text-align: center;
+            margin-left: 20px;
+            font-weight: bold;
+            background-color: #27865f;
+            color: white;
+            border-radius: 5px;
+            border: 0px;
+            cursor: pointer;
+        }
+        #propage>:nth-child(2)>div>button:hover{
+            background-color: #18553c;
+        }
+
+        #propage>:nth-child(2)>:nth-child(6){
+                font-size: 12px;
+                margin-left: 20px;
+                margin-bottom: 30px;
+                margin-top: 20px;
+        }
+        #propage>:nth-child(2)>:nth-child(7){
+            width: 40%;
+            height: 35px;
+            text-align: center;
+            margin-left: 20px;
+            border:1px solid rgb(216, 212, 212);
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            
+        }
+        #propage>:nth-child(2)>:nth-child(7):hover{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+   
+
+            
+
+
+</style>
+</head>
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<body>
+
+     <!-- Navigation Bar -->
+     <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+           <a href="https://www.overstock.com/intlcountryselect/">  <img id="flag" src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input id="search" type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc" src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png" alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart" src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png" alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="LRFurniture.html">Furnitue</a>
+            <a href="rugs.html">Rugs</a>
+            <a href="Decorative.html">Decor</a>
+            <a href="Bead&bath.html">Bed & Bath</a>
+            <a href="Overstock(HomeImprovements).html">Home Improvement</a>
+            <a href="Kitchen.html">Kitchen</a>
+            <a href="">Outdorr</a>
+            
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+    </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<div id="main">
+
+        <p id="top">Home Goods / Furniture / Bathroom Furniture / Bathroom Vanities</p>
+        <div id="propage">
+
+        </div>
+
+       
+    <div>
+        <div style="margin-top: 20px; margin-bottom: 10px; font-style: italic;">
+            Share this product:
+        </div>
+
+        <div id="social">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAACSCAMAAACZpWO8AAAAZlBMVEX///8AAAABAQGenp4UFBTn5+fw8PD8/PxeXl5RUVFhYWG4uLiysrIFBQXt7e309PTCwsKYmJjNzc3a2tpqampvb28pKSmIiIh4eHimpqYuLi48PDxJSUkODg6CgoKPj48dHR01NTXfHacEAAAER0lEQVR4nO2a63ayOhCGkyoiyhlRAVG8/5v8kkxiqRLUMPmz9zztWpVW4uTNZA6hjBEEQRAEQRAEQRAEQRAEQRD/AdJm5YcmdbSo4v4o3Uyq+c8PV1/6x9PLj35veVPtZtJWjKHhvy8XMBovcjNpx39nh4VRydmkx6T6erddyu5w5HgqcX4OWLgMtjkjqQRqJ/yeuw3yIO/ESAmMt0yl+JbATuG1EMrZoKDWU+O3eJFJ4t6YlWsODt66CyUlSuQgx5ztl5vEwgJWj/Nt4DSQlEitWHIVV8tM4sokxsoOHJO38vKb5ZPv3R+VOZwPFVMmLXNvMImxm3GFXfXlKMFWS8wLmAuOSoLqokce4tmbnolbKZC4sTNpDUslwSqB/cujzz2q2mmFePH4HZpKcvxITlj6RPOJQ4UsjGW8lndEo+VGVEl8SGO2XvSJRwU6/HO+Gk8AUyVBddBGDUX25u6w6Y39fxcaVSWJ8ijJdl4oucpgUfy0xsgqCdKtijHie5VZPCpk2arXQePwshfQVRIfGJvi52ITqtpynbKbV6PxVRKkIkEkagFPUx6VPRLQbjPxZw8qqd392HqvdT3ECj7hRcak5Wl3iuxs0sR13AAJLzrpgpbXlj3pZeFg5EFHnctYqPJivGhvC6Y+Fk4jhVLZ61eozVXlHLFsV3vY8qeSIO8TsOAOQimJVA2zn8k4HlUSH5q2pjyvU5aedF1t9SJjkkeVwsi0nJzfo/bRgHRvTPKlUsgC48qJaT5VWywu27lk41GlagDvPl/AGBALnKufOYbwpVLIqiPXtZneZ1Koc6Drl/V+xiRPKuVQziWNvJBbTeY82VXtEwgDjd0kPyrte9BIi7HJb9ciB68udSS4WU3yklAKWKlh0mWCDpbxML3x/CxcoasTy8ZKtZtNxycvlUANW/1iPSTIZPUio/pUL+NBpfAMGtxnzkAz3XJ3Ezriq5TpcsjiKYYCdJo4J0VXSfTTid1PRjTa317mhK1S0ELIPr2/fa8b0ebJ45BVKlvQqLDc8vxmFdKvL6YiqlTCoYw9Mv+lukPjVP+RCVWlGMrIPmfhZ2dMmwg23mXcqWCqpNuS/ovzwUyfnHSjAIWnUngDjWZroVeucAI3Sj1IKol1OsEB6JcWQToUVq0f2mKl3ewAdVr37TlzqKoV2RuvUEzSCxfKRzzqHD2a6qjfUeoudAUBCmfhgg7q6oPbQDIYqBzEwCQElVSxISy6uj4dEFOCMn3DcFQqjxCFbWXiB2x2UPNdUhSVyjUUrh+G7GnMsYaoVharlJvy3t5yfMZJZ+EqV/vE1SQ5nfXXIduCaacOy+JS8qNPQr4NkFPE+igM46mlrLIxKI+PY4OFz3b5Mcg2GGR5y5Ge7aKC9QQczR4z4NbNpNG/LmDjqlLxftbOuGaC89CvvTDMnK7OEwa+cH+6TxAEQRAEQRAEQRAEQRAEQRAE8f/kH1w4Oa92MDHzAAAAAElFTkSuQmCC" width="40" height="40">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAACaCAMAAABmIaElAAAAZlBMVEX///9HWZM0Sos5To02TIzy8/fN0N67wNQxSIrP0+DCxtefp8NDVpFSYpixts1BVJDl5+7Z3OYrQ4hdbJ6Llbdseab5+ft6ha3e4emXn76nrseRmrpWZppyfqnr7fNlc6KFjrMjPYUyou2jAAAC1UlEQVR4nO2bbbeiIBCAE7BMqVF7tbrW/f9/cmvz3G0BFVBe9uw8X6vpOQgIM7BYIAiCIAiCIAiCIAiC/J+k6/2OktmAQ3E+zmO2ujPKkxkBAqdqBrH2wGBOr84OmskNd97Q+cVeZKeJbuXGQZO9odPcjjtHbfYia6aoXRyaPTvc2t6sTGYdmZLahEe6JS7Nnm5na7WbszHwhhS2Zilza5bAwVatcq2WgK3a0un4fJHFq8ZSVBuAq2fIQGpAMkL5H1QLmBBqAMnpUrXpB+VddvOvBuSUy396zsKr0XulejmW8jTpWY3DRR0uuBqvlz3hQqvxpHcRFlqtXvWGC6xGr/3hwqrxTRmrGtkOhAurlg0t9oOq0cdQuFLeafhTI/lQuHXAF5VyEBzb8s3yJq+LvKnBl9TVlo+EdbmrTLFi86e2FyNcR9Jf3tSouK3cyr0rlJowq6VfY1tsb2pMGKDn0c1/MLVq7HmGU1NMZKiGaqiGaqg2SQ1Yx7egtvxmH6jWII7V6FfR0QjlurIpPmi470wR68lwyLTyMtetWq0f/SrFi0ZtH63a8SR1tljU0l20aq2cBY9FraylH8eiVnlXG0hb/c3Kd2KhbnXDFb4zRfpqDzlcLGreqy36at4zRbXu6aDU+6IIHponIgr/lT2ATUci1Ayqn0+ecFUw16vcn4qnmP+u6o9yaNhSLRPVgu8NUA3VUA3V5lULn/NANVTzribWqCJSE4vIEanFlzBFNVT7B9SI7dH5tXM1amm2aA3PgBur8Z2t2sLwJoSxGpUOhmjTmDWbsRqzv0FieKrfVA3utgN0oSpCzKlG+89VjlOCSW8zVKPWdzR+k5s8UjM12GgnDdWsmH67GanRjf11oI4ctPubgRqnu8lmz/62p5otp60GJLnMc0O0ajihGsgFbuXXGLlttesg47TrfDWK+Iet8lt5NWE2QxAEQRAEQRAEQRAE0eIXILVAcZkJiDQAAAAASUVORK5CYII=" width="40" height="40">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALsAAACICAMAAACIoGpbAAAATlBMVEX///9dqd1Zp9xJodpRpNv4+/3z+Pzr8/re7Pe/2vDG3vFvseDj7/iLv+Vzs+Brr9+cx+jV5/W01O3O4/ODuuOnzes8nNl7t+Ks0OuUw+ab4UvwAAAE9klEQVR4nO2c6darIAxFJQRnxfGzvv+LXq2dHWoosb1rsX87nMYQkgD1PIfD4XA4HA6Hw+FwOByOw/GDtKzrOkwD9W0pNMKo6EBO6OxU/z/y60YgAogLgCJp/cUr0+BgaduoOJE32Xf5spjLTPv8pz5IkMFM+RlMopcreyEr6++vo/fXrBDhsvLR9rK5W9kvu8GthA21z2gIzW5U1dxdHk2fp9Nl5SkfL5TmNlqjlKDNxlCBG8pH04vA8+tei/PXgW55AH9CBgJyE/GF3JY+is+lvLmV4dfdINUwfl76jdEbq0/ib8iTdekXCdBRLV+uD9MlMLMv/eq0SPVGQZPeXB9vMcSr/KIBaT5/2uExD9KvPpn2FqdW//bpQZf7bwspZgcsxntUWOV/sT3pXnAPFiDq3be1BLPDGNhVWXQCZW9RuhfKx5e0O73RpwxUXUWZkGO6hp1N6cPM9Pga2e8bsdHb0P4I4vRTTefANepnFTudPqdIvz0bUqvSX+w++s3pvekDWoC8PFkQYsEu0tnXv6ZQG8Qm0nF/JNiJPw8YIN8FYVpwv1jdssOM2vWCDVFvp6vvEsilJ9rPxDzVL+oYxux6uFQZ1Wcwt5//DlTLNgTZxWvq/YaoHQoO5UOQXH0hdiue43c07ciQ/p5R60JAYhsuGJ+s3X6xd+G0NUciZtUs6FB9hk+72p7fASCvnht1qv8V7e+jNUiZtFF5DxXEGMnQILgSLIX4V/mIIm+KKDz/gD2l6jHavXiXlMF5EOWfRN0Qx6q0WXC80pNSWlhp461rt52EPeLn9ASFop0hH7izx+XN+WNqXdfTcwNat4WGZGpdn/6yc+zwG0a34ZE+VJ5D3tLGgadaLsuD3Qr7zlivwhg58kwzaUerjY0HrjUfkCPffu32lzsmfDbJd+1cUxO9BqICDI33CwZ1M1G70cLELkpm6QI4Ou8TG3WTHbBl007sLdJhzcSY7S4ZpVMrCSJss+oZ3jDJWngMcytjEjmuD7PCOFwh4967QVk+ImpnrLMnFK1ipWC/dT2j4PF5aPiln4sQBu2sE9OdUts3PeiDdlmpk7Ctnq3smJOepLRZi4A+YKTeibPcXq+GM4V8QE1dUk+lldHC7xIgWVaZ5tozoZMk0TabBci0zDQjQgC7zQLb2wfWUdbTAjjG20dsJ2SHxXZvZYX7A5gT92dMdjisw5/8PkHfJrDFodOSp7Q98fK4gToR5LbcxmSj66fihR3LM/Yg10kTK+IZV7I3CHoLNYg8Khl4QVX4qemZdvrsUp99VoNA8s3jNGEL5jUIyGMj+wxVj0tnYGB/AOt7CQ1I6+hEz3HYVpeo9GSzM5xhMqImz1TwncA+wy/IwxUOzXtXURE9PQDxC9JV3NGrqK8kMTPiziC6s2z5paHCCg1SGsD+2wc808osIQC2fbN7UH5QFxrQJBcASI7OA+q4DNM0Dcs6jto+QWmYggHuPZ9jj6BHobU+Jy5G9p7Aw41+pmwGU39Ua8C7Mwp8qHrhqDhFOc63aR9InZi6y2Dz4x39hTgzKfNAJjuOQrGjwoI2WMdtzXn9A8on4kzjzhgJUjTtb/3FQ1r3IHFz+WDcRy5lEy2dAvk6adXoKdq//ITz7ncQSbd4euVX8MO4KrJcoHwAdZ4VVVz+jItvMGQ3wZAsxCN1GQaB7/+wuR0Oh8PhcDgcDofDlH8mMjeLpKOVQgAAAABJRU5ErkJggg==" width="40" height="40">
+            <img src="data:image/png;base64,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" width="40" height="40">
+        </div>
+    </div>
+
+    <p style="font-size: 15px;" >"Perfectly packaged- unassembled - and excellent quality for the price.</p>
+
+    <div id="reviews">
+
+        <div id="stars2">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
+
+        <div>
+            <a href="" style="color: #687ab7;"><p style="margin-top: -0.5px; font-size: 13px;">See All Reviews</p></a>
+        </div>
+    </div>
+    
+    <div id="dns">
+
+        <img src="https://64.media.tumblr.com/a5b73faf5f25f3e40186cbb8ece1aad6/2ff5eb405a00d24e-ca/s1280x1920/6cd22fff498aa46a2556b195980b6b2f0103102e.pnj" width="1020" height="600">
+
+        <img src="https://64.media.tumblr.com/73ba3c5f69a32250528aa7c7399f7f6b/f4340b30e6ef060f-53/s1280x1920/e51e17aa0fec8ad3b4ec1e8ac3e4eac0898a7a35.pnj"width="1000" height="400">
+
+        <img src="https://64.media.tumblr.com/79191d9a9707686a9498cb5a97ebdffb/87b84491d5d675b2-08/s1280x1920/a17640b902ac2cb50560431c3b89ec5fa9821142.pnj"width="1000" height="500">
+
+        <img src="https://64.media.tumblr.com/89eb91a781b8cadef2e60a719af1e396/ed96d4150cb95673-ad/s1280x1920/6b9319c93a02b26a56542a5e69b70580c3741360.pnj"width="1000" height="500">
+
+        <img style="margin-left: 5px;" src="https://64.media.tumblr.com/046121ef7aef1d7fa620b663e3d887a8/5523ea583a7474e8-0b/s1280x1920/b7580529d06c350cf68853080b7c58cd79803101.pnj"width="1000" height="620">
+    </div>
+
+        <p style="font-size: 18px; margin-left: 10px;">People Also Searched</p>
+
+        <div id="searched">
+
+        <div>Modern Bathroom Vanities</div>
+
+        <div>Rustic Bathroom Vanities</div>
+
+        <div>Double Sink Bathroom Vanities</div>
+
+        <div>48 Inch Bathroom Vanities</div>
+
+        <div>Mid-Century Bathroom Vanities</div>
+
+        <div>60 Inch Bathroom Vanities</div>
+
+        <div>Single Sink Bathroom Vanities</div>
+
+        <div>Farmhouse Style Bathroom Vanities</div>
+    </div>
+
+    <img style="margin-left: 10px; margin-top: 20px;" src="https://64.media.tumblr.com/66d7f87bd4ceea4cbd6ceaf6af8a770e/76260497c36ba42b-8f/s1280x1920/1cfa0a779b023824cd6e2c1b716e8105499e07d6.pnj"width="650" height="620">
+</div>
+
+
+
+     <!-------------------------------------------- footer  ----------------------------------->
+     <footer id="footerone">
+        <div>
+            <h3>My Account</h3>
+            <p>Orders & returns</p>
+            <p>Email Preferences</p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <h3>LET US HELP</h3>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <h3>COMPANY INFORMATION</h3>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain <br> Transparency</p>
+        </div>
+        <div>
+            <h3>MORE WAYS TO SHOP</h3>
+            <p>Tips & Ideas</p>
+            <p>Deals</p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+           
+        </div>
+    </footer>
+
+    <footer id="footertwo">
+        <div> 
+         © Copyright 2022, Overstock.com®, Inc. <br> 799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+      </div>
+
+        <div id="last">
+         <div>Privacy Policy</div>
+
+         <div>Terms & Conditions</div>
+
+         <div>*Promotion Terms</div>
+
+         <div>Ship to:</div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+<script>
+var productData=[
+{
+    proimg:"https://ak1.ostkcdn.com/images/products/is/images/direct/855d01ab0437662d3f795efd2a959952c830ea5d/HOMCOM-24%22-Pedestal-Sink-Bathroom-Vanity-Cabinet---White.jpg",
+    proname:"HOMCOM 24 Pedestal Sink Bathroom Vanity Cabinet - White",
+    rate:"https://www.pngplay.com/wp-content/uploads/6/Golden-5-Star-Rating-PNG.png",
+  
+    price:"Starting at INR 7844",
+    cost:7844,
+    
+   
+}]
+
+var proArr=JSON.parse(localStorage.getItem("proPage")) || [] ;
+
+productData.forEach(function(elem){
+
+var pro_i_div=document.createElement("div");
+var proimg=document.createElement("img");
+proimg.setAttribute("src",elem.proimg);
+pro_i_div.append(proimg);
+var detail_div=document.createElement("div");
+var name=document.createElement("p");
+name.innerText=elem.proname;
+var rate=document.createElement("img");
+rate.setAttribute("src",elem.rate)
+var price=document.createElement("p");
+price.innerText=elem.price;
+detail_div.append(name,rate,price)
+var cost=elem.cost;
+
+document.querySelector("#propage").append(pro_i_div,detail_div)
+
+})
+
+var quant=document.createElement("select");
+
+var q1=document.createElement("option");
+q1.innerText= 1;
+var q2=document.createElement("option");
+q2.innerText=2;
+var q3=document.createElement("option");
+q3.innerText=3;
+var q4=document.createElement("option");
+q4.innerText=4;
+var q5=document.createElement("option");
+q5.innerText=5;
+var q6=document.createElement("option");
+q6.innerText=6;
+var q7=document.createElement("option");
+q7.innerText=7;
+var q8=document.createElement("option");
+q8.innerText=8;
+var q9=document.createElement("option");
+q9.innerText=9;
+var q10=document.createElement("option");
+q10.innerText=10;
+quant.append(q1,q2,q3,q4,q5,q6,q7,q8,q9,q10);
+
+var div1=document.createElement("div")
+div1.append(quant)
+var addcart=document.createElement("button");
+addcart.innerText="Add To Cart";
+div1.append(addcart)
+var line=document.createElement("hr");
+
+var proid=document.createElement("p");
+proid.innerText="ITEM# 37779696"
+
+var fav=document.createElement("button");
+fav.innerText="Favorites"
+document.querySelector(" #propage>:nth-child(2)").append(div1,line,proid,fav)
+
+
+//var prodaa=JSON.parse(localStorage.getItem("proPage"))
+//console.log(prodaa);
+
+document.querySelector(" #propage>:nth-child(2)>div>button").addEventListener("click",myCart);
+
+function myCart(){
+    localStorage.setItem("proPage",JSON.stringify(productData));
+    
+}
+
+</script>
