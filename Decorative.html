@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        .checked {
+            color: orange;
+        }
+
+        h3 {
+            color: #2F3337;
+            margin-left: 20px;
+
+        }
+
+        #box {
+            display: flex;
+            width: 98%;
+            margin: 30px;
+        }
+
+        .box1>h2 {
+            color: white;
+            padding-top: 20px;
+            /* padding-left: 80px; */
+            text-align: center;
+
+        }
+
+        #box>div+div {
+            margin-left: -10px;
+            background-image: url(//ak1.ostkcdn.com/img/mxc/Q3_2018_1900x950_033-DecorativeAccessories-CAT-248.jpg?imwidth=1200&impolicy=custom);
+            width: 70%;
+            height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-size: 100% 100%; */
+
+        }
+
+        #div {
+            width: 25%;
+        }
+
+        .box1 {
+            background-color: #000000A6;
+            width: 35%;
+            margin-left: 20px;
+
+        }
+
+
+        .box1>h1 {
+            font-size: 70px;
+            margin-top: -25px;
+            font-family: sans-serif;
+            color: white;
+            font-weight: bold;
+            /* padding-left: 40px; */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        h5 {
+            font-size: 20px;
+            margin-top: -20px;
+            color: white;
+            text-align: center;
+            /* padding-left: 20px; */
+
+        }
+
+        button {
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 5px;
+            color: white;
+            padding: 10px;
+
+            margin-left: 25px;
+            background-color: rgb(89, 74, 74);
+        }
+
+        body>h1 {
+            color: #2F3337;
+            font-family: sans-serif;
+            font-size: 40px;
+            margin-top: 10px;
+            margin-left: 20px;
+
+        }
+
+        #data {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        #data>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        #data>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .head {
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .data1 {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        .data1>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        .data1>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .data2 {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        .data2>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        .data2>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .data3 {
+            display: grid;
+            margin-top: 40px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto);
+
+        }
+
+        .data3>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-left: 15px;
+        }
+
+        .data3>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #para {
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        #para2 {
+            width: 100%;
+            font-size: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+           <a href="https://www.overstock.com/intlcountryselect/">  <img id="flag" src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input id="search" type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc" src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png" alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart" src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png" alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
+            <a href="">Decor</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
+            <a href="">Outdorr</a>
+            
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+   
+    <h3>Home Decor
+        /
+        Decorative Accessories
+    </h3>
+    <h1>
+        Decorative Accessories
+    </h1>
+    <div id="box">
+        <div id="div">
+            <h3>Statues & Sculptures</h3>
+            <h3>Vases</h3>
+            <h3>Accent Pieces</h3>
+            <h3>Silk Plants</h3>
+            <h3>Mirror</h3>
+            <h3>Outdoor Decor</h3>
+        </div>
+        <div>
+            <div class="box1">
+                <h2>EXTRA </h2>
+                <h1>15%</h1>
+                <h5>OFF SELECT DECORATIVE ACCESSORIES*
+                </h5>
+                <button>SHOW NOW</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Shop Wall Decor</h2>
+        <div id="data">
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Shop Accessories</h2>
+        <div class="data1">
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Shop Outdoor Decor
+        </h2>
+        <div class="data2">
+        </div>
+    </div>
+    <div class="data3">
+    </div>
+    <footer id="footerone">
+        <div>
+            <h3>My Account</h3>
+            <p>Orders & returns</p>
+            <p>Email Preferences</p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <h3>LET US HELP</h3>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <h3>COMPANY INFORMATION</h3>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain <br> Transparency</p>
+        </div>
+        <div>
+            <h3>MORE WAYS TO SHOP</h3>
+            <p>Tips & Ideas</p>
+            <p>Deals</p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+           
+        </div>
+    </footer>
+
+    <footer id="footertwo">
+        <div> 
+         © Copyright 2022, Overstock.com®, Inc. <br> 799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+      </div>
+
+        <div id="last">
+         <div>Privacy Policy</div>
+
+         <div>Terms & Conditions</div>
+
+         <div>*Promotion Terms</div>
+
+         <div>Ship to:</div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    wall = [{
+        "image": "https://ak1.ostkcdn.com/images/products/19975641/Kate-and-Laurel-Hogan-Wood-Framed-Mirror-with-Scallop-Corners-24x36-b30c507a-7bfe-4e0d-a643-557fa0a2bca0.jpg?imWidth=320&impolicy=medium",
+        "name": "Mirrors",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/20112711/Samson-Metal-Wall-Clock-32-h-x-32-w-x-2-d-e55b8aab-60e4-4dd5-8a1f-b6574acc64ee.jpg?imWidth=320&impolicy=medium",
+        "name": "Clocks",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/img/mxc/DECORATIVE-ACCESSORIES_DecorativeShelves-08.21.jpg?imWidth=320&impolicy=medium",
+        "name": "Decorative Shelves",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/19966377/Succulents-Set-of-4-8X8-Canvas-Wall-Art-Prints-9b967d01-ecef-4466-af4e-7add2b8797ed.jpg?imWidth=320&impolicy=medium",
+        "name": "Canvas Art",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/28038674/Single-Fern-in-White-Framed-Painting-Print-Multi-color-d18daf6a-4685-4323-b7ec-4d281108a50d.jpg?imWidth=320&impolicy=medium",
+        "name": "Prints",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/25978276/Country-French-Flower-Large-94040fb5-6b79-4e03-92d3-0846dd342804.jpg?imWidth=320&impolicy=medium",
+        "name": "Metal Art",
+    }]
+
+    Type = document.getElementById("data")
+    wall.map(function (ele) {
+        var divv = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.src = ele.image
+        var para = document.createElement("p")
+        para.innerText = ele.name;
+
+        divv.append(img, para);
+        Type.append(divv);
+    })
+
+    shop = [{
+        "image": "https://ak1.ostkcdn.com/images/products/19848778/Buffalo-Check-18-Inch-Decorative-Throw-Pillow-Cover-set-of-2-85c6694f-53a8-49cb-9e4f-6eab9dbfec87.jpg?imWidth=320&impolicy=medium",
+        "name": "Throw Pillows"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/8367250/6-foot-Fiddle-Leaf-Fig-Tree-ff765061-9456-404f-830a-0179daad9469.jpg?imWidth=320&impolicy=medium",
+        "name": "Silk Plants",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/9540129/SB-Kanan-Wood-Candleholders-In-Distressed-Finishes-Set-of-5-7d4ec7d6-923e-4d64-a919-7c87e2ed993e.jpg?imWidth=320&impolicy=medium",
+        "name": "Candles & Holders"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/13749044/Madison-Park-Signature-Ansen-Metallic-Bronze-3-Piece-Vase-Set-6b9092a8-b097-4c02-806a-47e0afca0415.jpg?imWidth=320&impolicy=medium",
+        "name": "Vases",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/10810078/Barnwood-Signature-Series-Picture-Frame-11-x-14-e2b03a64-694f-4b80-9331-004672c1ff19.jpg?imWidth=320&impolicy=medium",
+        "name": "Photo Frames & Albums"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/16295574/Madison-Park-Asher-Black-Gold-Cube-Decor-Set-of-3-a66cd620-410b-4d9d-b4d9-f72d7a5bec83.jpg?imWidth=320&impolicy=medium",
+        "name": "Statues & Sculptures",
+    },
+    ]
+    Shape = document.querySelector(".data1")
+    shop.map(function (el) {
+        var div1 = document.createElement("div");
+        var Image = document.createElement("img")
+        Image.src = el.image
+        var para1 = document.createElement("p")
+        para1.innerText = el.name;
+        div1.append(Image, para1);
+        Shape.append(div1)
+    })
+
+    outdoor = [{
+        "image": "https://ak1.ostkcdn.com/img/mxc/DECORATIVE-ACCESSORIES_FirepitsandChimineas-08.21.jpg?imWidth=320&impolicy=medium",
+        "name": "Fire Pits & Chimineas",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/img/mxc/DECORATIVE-ACCESSORIES_GardenAccents-08.21.jpg?imWidth=320&impolicy=medium",
+        "name": "Garden Accents",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/img/mxc/DECORATIVE-ACCESSORIES_Planters-08.21.jpg?imWidth=320&impolicy=medium",
+        "name": "Planters, Hangers & Stands"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/img/mxc/DECORATIVE-ACCESSORIES_Doormats-08.21.jpg?imWidth=320&impolicy=medium",
+        "name": "Doormats",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/img/mxc/DECORATIVE-ACCESSORIES_OutdoorFountains-08.21.jpg?imWidth=320&impolicy=medium",
+        "name": "Outdoor Fountains"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/img/mxc/DECORATIVE-ACCESSORIES_PatioHeaters-08.21.jpg?imWidth=320&impolicy=medium",
+        "name": "Patio Heaters"
+    },
+
+    ]
+    Color = document.querySelector(".data2")
+    outdoor.map(function (el) {
+        var div2 = document.createElement("div");
+        var Image = document.createElement("img")
+        Image.src = el.image
+        var para2 = document.createElement("p")
+        para2.innerText = el.name;
+        div2.append(Image, para2);
+        Color.append(div2)
+    })
+
+
+
+    items = [{
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/5945eb9e71a68a86e0763e1840e637941c75ed4b/Mina-Victory-Distressed-Diamond-Boho-Throw-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2047.79",
+        "des": "Mina Victory Distressed Diamond Boho Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0c5a948924313be559e82ff28514286def132b65/Contemporary-Candle-Lanterns.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2337.96",
+        "des": "Contemporary Candle Lanterns",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/0feb82ae997dee745f9328a71093539947fc3a38/Room-Divider%2C-Folding-Privacy-Screen%2C-Tall-Partition-Foldable-Wall-Panel.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 12124.16",
+        "des": "Room Divider Folding Privacy Screen Tall Partition Foldable Wall Panel",
+
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/3f16b04adc18db1263627b386c1c0250d8946358/Harrell-Solid-Velvet-22-inch-Feather-Down-or-Poly-Filled-Pillow.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2892.95",
+        "des": "Harrell Solid Velvet 22-inch Feather Down or Poly Filled Throw Pillow",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/is/images/direct/536575e51c7ee5f2e923cd09c4b2eb4195461b86/3-Piece-Metal-Multi-tone-Vase-Set.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 10167.27",
+        "des": "Blue, Grey, White Ombre Metal Vase (Set of 3)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/14053721/Cheer-Collection-Faux-Fur-Throw-Pillow-Set-of-2-3634cd3e-4f24-4246-8350-223bcb3077ac_600.jpg?imwidth=480&impolicy=medium",
+        "price": "Starting at INR 2762.72",
+        "des": "Cheer Collection Solid Color Faux Fur Throw Pillows (Set of 2)",
+    },
+    ]
+
+
+    Item = document.querySelector(".data3")
+    items.map(function (el) {
+
+        var div3 = document.createElement("div");
+        var div4 = document.createElement("div");
+        var span1 = document.createElement("span");
+        span1.setAttribute("class", "fa fa-star checked");
+        var span2 = document.createElement("span");
+        span2.setAttribute("class", "fa fa-star checked");
+        var span3 = document.createElement("span");
+        span3.setAttribute("class", "fa fa-star checked");
+        var span4 = document.createElement("span");
+        span4.setAttribute("class", "fa fa-star checked");
+        var span5 = document.createElement("span");
+        span5.setAttribute("class", "fa fa-star");
+
+        div4.append(span1,span2,span3,span4,span5);
+        
+        var Image = document.createElement("img")
+        Image.src = el.image
+        var para3 = document.createElement("p")
+        para3.innerText = el.price;
+
+        para3.setAttribute("Id", "para2")
+        var para4 = document.createElement("p")
+        para4.setAttribute("Id", "para")
+        para4.innerText = el.des
+        div3.append(Image, para3,div4, para4);
+        div3.addEventListener("click",function(){
+            product(el)
+        })
+        Item.append(div3)
+    })
+    function product(el){
+        arr =[]
+        arr.push(el)
+        console.log("arr",arr)
+
+        localStorage.setItem("detail",JSON.stringify(arr))
+        window.location.href="products.html"
+      }
+
+</script>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+
+
+    <style>
+                .checked {
+            color: orange;
+        }
+        #box{
+            display: flex;
+        }
+        #box1{
+            display: flex;            
+        }
+        #detail{
+            margin-left: 20px;
+            font-size: 30px;
+            width: 30%;
+        }
+        #detail >p{
+            margin-bottom: 30px;
+        }
+        button{
+            width: 200px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 40px;
+            margin-top: 10px;
+        }
+        #select{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+           <a href="https://www.overstock.com/intlcountryselect/">  <img id="flag" src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input id="search" type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc" src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png" alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart" src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png" alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
+            <a href="">Decor</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
+            <a href="">Outdorr</a>
+            
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+   
+      <div id="box"> 
+          <div id="image"></div>
+          <div id="detail">
+          </div>
+         <div id="box1">
+              <select id="select">
+              <option>Quantity 1</option>
+              <option>Quantity 2</option>
+              <option>Quantity 3</option>
+              <option>Quantity 4</option>
+          </select>
+          <div id="box2"></div>
+         </div>
+      </div>
+      
+</body>
+</html>
+
+<script>
+        var productsdetail = JSON.parse(localStorage.getItem("detail"));
+        var box2 =document.getElementById("box2")
+        var star =document.createElement("div")
+        var span1 = document.createElement("span");
+        span1.setAttribute("class", "fa fa-star checked");
+        var span2 = document.createElement("span");
+        span2.setAttribute("class", "fa fa-star checked");
+        var span3 = document.createElement("span");
+        span3.setAttribute("class", "fa fa-star checked");
+        var span4 = document.createElement("span");
+        span4.setAttribute("class", "fa fa-star checked");
+        var span5 = document.createElement("span");
+        span5.setAttribute("class", "fa fa-star");
+        star.append(span1,span2,span3,span4,span5);
+        var box =document.getElementById("box1")
+        var detail =document.getElementById("detail")
+        var image =document.getElementById("image")
+          var img = document.createElement("img")
+          img.src = productsdetail[0].image
+          var para =document.createElement("p")
+             para.innerText=productsdetail[0].price
+    
+          var para1 =document.createElement("p")
+          para1.innerText=productsdetail[0].des
+          var button =document.createElement("button")
+          button.innerText="Add to Cart"
+        box2.append(button)
+     detail.append(para1,star,para,box)
+      image.append(img)
+
+       
+</script>

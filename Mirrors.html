@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+
+    
+    <style>
+        
+        .checked {
+            color: orange;
+        }
+        h3 {
+            color: #2F3337;
+            margin-left: 20px;
+
+        }
+
+        #box {
+            display: flex;
+            width: 98%;
+            margin: 30px;
+        }
+
+        .box1>h2 {
+            color: white;
+            padding-top: 20px;
+            padding-left: 80px;
+
+        }
+
+        #box>div+div {
+            margin-left: -10px;
+            background-image: url(//ak1.ostkcdn.com/img/mxc/10092018_sp_mirrors_q3_egreen.jpg?imwidth=1200&amp;impolicy=custom);
+            width: 70%;
+            height: 400px;
+          background-size: cover;
+            background-repeat: no-repeat;
+            /* background-size: 100% 100%; */
+
+        }
+
+        #div {
+            width: 25%;
+        }
+
+        .box1 {
+            background-color: #000000A6;
+            width: 25%;
+            margin-left: 20px;
+
+        }
+
+        h1 {
+            font-size: 70px;
+            margin-top: -25px;
+            font-family: sans-serif;
+            color: white;
+            font-weight: bold;
+            padding-left: 40px;
+            margin-bottom: 10px;
+
+        }
+
+        h5 {
+            font-size: 20px;
+            margin-top: -20px;
+            color: white;
+            padding-left: 20px;
+
+        }
+
+        button {
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 5px;
+            color: white;
+            padding: 10px;
+
+               margin-left: 20px;
+            background-color: rgb(89, 74, 74);
+        }
+        body>h1 {
+            color: #2F3337;
+            font-family: sans-serif;
+            font-size: 40px;
+            margin-top: 10px;
+            
+        }
+
+        #data {
+            display: flex;
+            margin: 10px;
+
+        }
+        #data>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+        #data >div>p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .head{
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .data1 {
+            display: flex;
+            margin: 10px;
+
+        }
+        .data1>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+        .data1 >div>p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .data2 {
+            display: flex;
+            margin: 10px;
+
+        }
+        .data2>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+        .data2 >div>p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .data3 {
+            display: flex;
+            margin: 10px;
+
+        }
+        .data3>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+        .data3 >div>p{
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .data4 {
+            display: grid;
+            margin: 10px;
+            margin-top: 40px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto);
+
+        }
+
+        .data4>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        .data4>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #para {
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        #para2 {
+            width: 100%;
+            font-size: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+           <a href="https://www.overstock.com/intlcountryselect/">  <img id="flag" src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input id="search" type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc" src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png" alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart" src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png" alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
+            <a href="">Decor</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
+            <a href="">Outdorr</a>
+            
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+   
+    <h3>Home Decor
+        /
+        Decorative Accessories
+        /
+        Mirrors</h3>
+    <h1>
+        Mirrors
+    </h1>
+    <div id="box">
+        <div id="div">
+            <h3>Wall Mirror</h3>
+            <h3>Full Length</h3>
+            <h3>Round Mirrors</h3>
+            <h3>Window Mirror</h3>
+            <h3>Floor Mirror</h3>
+            <h3>Bathroom-Vanity Mirrors </h3>
+        </div>
+        <div>
+            <div class="box1">
+                <h2>EXTRA </h2>
+                <h1>15%</h1>
+                <h5>OFF SELECT MIRRORS*</h5>
+                <button>SHOW NOW</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Type</h2>
+        <div id="data">
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Shape</h2>
+        <div class="data1">
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Color</h2>
+        <div class="data2">
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Category</h2>
+        <div class="data3">
+        </div>
+    </div>
+    <div class="data4">
+    </div>
+    <footer id="footerone">
+        <div>
+            <h3>My Account</h3>
+            <p>Orders & returns</p>
+            <p>Email Preferences</p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <h3>LET US HELP</h3>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <h3>COMPANY INFORMATION</h3>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain <br> Transparency</p>
+        </div>
+        <div>
+            <h3>MORE WAYS TO SHOP</h3>
+            <p>Tips & Ideas</p>
+            <p>Deals</p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+           
+        </div>
+    </footer>
+
+    <footer id="footertwo">
+        <div> 
+         © Copyright 2022, Overstock.com®, Inc. <br> 799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+      </div>
+
+        <div id="last">
+         <div>Privacy Policy</div>
+
+         <div>Terms & Conditions</div>
+
+         <div>*Promotion Terms</div>
+
+         <div>Ship to:</div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    type = [{
+        "image": "https://ak1.ostkcdn.com/images/products/26565477/Crossly-Bronze-Finish-Floating-Round-Wall-Mirror-by-iNSPIRE-Q-Modern-8677662b-8b71-4c8d-a5c6-84107596d204_600.jpg?imWidth=320&impolicy=medium",
+        "name": "Wall Mirror",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/22801913/Strick-Bolton-Ives-Rustic-Wood-Plank-Framed-Mirror-Walnut-A-N-34d8452e-9c48-4c2d-bebb-cfb680306922_600.jpg?imWidth=320&impolicy=medium",
+        "name": "Full Length",
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/20506624/Holly-Martin-Wykes-3pc-Mirror-Set-Contemporary-Style-Champagne-d6a26b51-d3b9-43ac-8d2d-1952f404484a_600.jpg?imWidth=320&impolicy=medium",
+        "name": "Mirror Sets"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/25443455/Kate-and-Laurel-Norgard-Windowpane-Rustic-Brown-Wall-Mirror-6796cbf1-d11f-4ed0-b3e6-4fe0c635adbc_600.jpg?imWidth=320&impolicy=medium",
+        "name": "Window Mirror"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/30328546/Large-Rectangle-Thin-Framed-Full-Length-Mirror-Floor-Mirror-with-stand-21.26x64.17-a075b907-7d64-412a-bcbd-6b9b0f5da4b5_600.jpg?imWidth=320&impolicy=medium",
+        "name": "Floor Mirror"
+    },
+    {
+        "image": "https://ak1.ostkcdn.com/images/products/28986324/Black-Large-Rectangle-Bathroom-Wall-Mounted-Vanity-Mirror-808d5d29-dbcf-45da-b3dd-d67ebcc4bc1d_600.jpg?imWidth=320&impolicy=medium",
+        "name": "Bathroom-Vanity Mirror",
+    }
+    ]
+    
+    Type = document.getElementById("data")
+    type.map(function (ele) {
+        var divv =  document.createElement("div");
+        
+        var img = document.createElement("img");
+        img.src = ele.image
+        var para = document.createElement("p")
+        para.innerText = ele.name;
+
+        divv.append(img, para);
+        Type.append(divv);
+    })
+    shape =[
+          {
+          "image" :"https://ak1.ostkcdn.com/images/products/19468097/Carbon-Loft-Berlik-Industrial-Metal-Wall-Mirror-Grey-33-H-x-20.5-W-x-1-D-Mirror-29-H-x-16.5-W-2417e4f7-ca14-4cd5-9280-fc0a89863b1b_600.jpg?imWidth=320&impolicy=medium",
+          "name" :"Rectangular"
+      },
+      {
+          "image" :"https://ak1.ostkcdn.com/images/products/28094130/Copper-Grove-Encamp-30-inch-Round-Framed-Wall-Mirror-4a177b9b-87f9-4d96-9b8a-e9ee4c765d5d_600.jpg?imWidth=320&impolicy=medium",
+          "name"  : "Round"
+      },
+      {
+          "image" :"https://ak1.ostkcdn.com/images/products/28675620/Martha-Stewart-Cantitoe-Black-Oval-Accent-Mirror-23.4-W-x-37.99-H-x-1.18-D-4fdbf00f-5c16-4d08-ac91-eecde2244d10_600.jpg?imWidth=320&impolicy=medium",
+          "name" :"Oval"
+      },
+      {
+          "image": "https://ak1.ostkcdn.com/images/products/29037920/Copper-Grove-Vulcanesti-Antique-Coalmine-Mirror-c278c9a0-92f6-4088-b94f-3cc1cefac48c_600.jpg?imWidth=320&impolicy=medium",
+          "name" : "Square"
+      },
+      {
+          "image" : "https://ak1.ostkcdn.com/images/products/29880003/Safavieh-Rulan-Mirror-c3f8e016-e5e0-4851-a577-4dfc521c2a22_600.jpg?imWidth=320&impolicy=medium",
+          "name" :"Sunburst"
+      },
+      {
+          "image" :"https://ak1.ostkcdn.com/images/products/30579245/Modern-Oak-Hexagon-Decorative-Wall-Mounted-Vanity-Mirror-23.62x20.47-63b092e3-238e-413a-b355-cf90d17838e4_600.jpg?imWidth=320&impolicy=medium",
+          "name" :"Hexagon Mirror"
+      },
+
+]
+    Shape =document.querySelector(".data1")
+    shape.map(function(el){
+        var div1 =document.createElement("div");
+         var Image =document.createElement("img")
+         Image.src =el.image
+         var para1 =document.createElement("p")
+         para1.innerText=el.name;
+         div1.append(Image,para1);
+         Shape.append(div1)
+    })
+    
+color =[
+
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/7315967/Abbyson-Pierre-Silver-Round-Wall-Mirror-709bb6cc-9882-4a20-8496-fc746aeabae9_600.jpg?imWidth=320&impolicy=medium",
+        "name" :"Silver"
+    },
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/28556487/Safavieh-30-Alba-Sunburst-Mirror-Gold-30.3-x-1.5-x-30.3-27824a2b-17d7-4d0e-9bb7-6d6ad6475c40_600.jpg?imWidth=320&impolicy=medium",
+        "name" :"Gold"
+    },
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/28236866/Safavieh-30-inch-Eason-Mirror-Black-02c2a6dc-c004-45cf-8574-52a55fd4c42b_600.jpg?imWidth=320&impolicy=medium",
+        "name" :"Black"
+    },
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/29144139/Martha-Stewart-Trellis-Round-Accent-Mirror-43482bca-5d90-4049-8140-4fbe220a18e5_600.jpg?imWidth=320&impolicy=medium",
+        "name" :"White"
+    },
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/27901674/FirsTime-Co.-Ingram-Barn-Door-Mirror-With-Shelf-25-H-x-20-W-f9d20198-4369-47c8-9304-325b746caea3_600.jpg?imWidth=320&impolicy=medium",
+        "name": "Brown"
+    },
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/20112736/Morris-Wall-Mirror-Gray-30-x-20-Grey-30-h-x-20-w-x-1-d-15e87944-0016-41bc-93a2-3425ca9e939d_600.jpg?imWidth=320&impolicy=medium",
+        "name" :"Grey"
+    },
+]
+ Color =document.querySelector(".data2")
+    color.map(function(el){
+        var div2 =document.createElement("div");
+         var Image =document.createElement("img")
+         Image.src =el.image
+         var para2 =document.createElement("p")
+         para2.innerText=el.name;
+         div2.append(Image,para2);
+         Color.append(div2)
+    })
+
+    category =[
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/29879568/Safavieh-Hale-Mirror-36efe68d-6a99-49ef-9530-f3fad1235125_600.jpg?imWidth=320&impolicy=medium",
+        "name" : "Modern"
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/13622345/Furniture-of-America-Revo-Industrial-Distressed-Wall-Mirror-72a7218a-39a2-4432-907a-7111d6a50643_600.jpg?imWidth=320&impolicy=medium",
+        "name" : "Industrial"
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/29045963/Glenan-Farmhouse-Wall-Mirror-N-A-1580f592-69e1-4720-b27c-09bd46949dbc_600.jpg?imWidth=320&impolicy=medium",
+        "name" : "Farmhouse"
+    },
+    {
+        "image" :"https://ak1.ostkcdn.com/images/products/26031325/Safavieh-Fia-Mirror-Gold-47.2-x-0.8-x-31.5-352779e2-6340-438f-bc09-45f78fab106a_600.jpg?imWidth=320&impolicy=medium",
+        "name" :"Glam"
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/24079866/Traditional-Silver-Venetian-Style-Wall-Mirror-by-Baxton-Studio-Antique-Silver-a27a2ff2-8f5f-44ac-a4e5-c48227ef3598_600.jpg?imWidth=320&impolicy=medium",
+        "name" : "Traditional"
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/29357714/Stratton-Home-Decor-31.50-Kristen-Rattan-Wall-Mirror-14f9c622-ea3d-4d79-b0fa-9d2c6d99c2f0_600.jpg?imWidth=320&impolicy=medium",
+        "name" : "Bohemian"
+    }
+]
+  Category =document.querySelector(".data3")
+    category.map(function(el){
+        var div3 =document.createElement("div");
+         var Image =document.createElement("img")
+         Image.src =el.image
+         var para3 =document.createElement("p")
+         para3.innerText=el.name;
+         div3.append(Image,para3);
+         Category.append(div3)
+    })
+
+    
+items =[{
+    "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/b8c9ee5d9f874b3dd9a93d8e08958becf00cabca/20-in.-W-x-28-in.-L-Single-Beveled-Edge-Bath-Wall-Vanity-Mirror.jpg?imwidth=480&impolicy=medium",
+    "price" : "Starting at INR 10103.46",
+    "des"  : "Single Beveled Edge Bath Wall Vanity Mirror" 
+},
+  {
+      "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/7d215fbc077189b0c4c34a5d5b56bc6ca20f9307/Rathburn-Metal-Venetian-Wall-Mounted-Mirror.jpg?imwidth=480&impolicy=medium",
+      "price" : "Starting at INR 11828.74",
+      "des" : "Rathburn Metal Venetian Wall Mounted Mirror"
+  },
+  {
+      "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/ddfce3de91175a6d169a297773e844b04f1d2a74/Contemporary%C2%A0Rectangle-Aluminum-Alloy-Thin-Framed-Full-Length-Floor-Mirror.jpg?imwidth=480&impolicy=medium",
+      "price" : "Starting at INR 10378.77",
+      "des" : "Modern Aluminum Alloy Thin Framed Full Length Floor Mirror",
+  },
+ { "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/346baebdcd2b783dbc82a30202d54a3cc0400c6c/Black-Simple-Fashion-Rectangle-Bathroom-Wall-Mounted-Vanity-Mirror.jpg?imwidth=480&impolicy=medium",
+ "price" : "Starting at INR 13639.68",
+ "des" : "Modern Large Black Rectangle Wall Mirrors for Bathroom Vanity Mirror",
+ },
+ {
+     "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/ddab284f176f8bb8e293415ea2ed502c8f8882f2/Dressing-Mirror-Arched-Wall-Mirror-Standing%2C-Leaning-Hanging.jpg?imwidth=480&impolicy=medium",
+     "price" : "Starting at INR 15468.96",
+     "des" : "Arched Top Full-length Freestanding/ Leaning/ Hanging Wall Mirror",
+ },
+ {
+     "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/e5c603a44bad872143940b4460698e010cf33cf2/Modern-Thin-Frame-Wall-Mounted-Hanging-Bathroom-Mirror.jpg?imwidth=480&impolicy=medium",
+     "price" : "Starting at INR 9134.19",
+     "des" : "Modern Thin Frame Wall-mounted Hanging Bathroom Vanity Wall Mirror",
+ },
+ {
+     "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/920657139fe1e074593325594d3409882e5128d6/Rustic-Wooden-Framed-Wall-Mirror%2C-Natural-Wood-Bathroom-Vanity-Mirror.jpg?imwidth=480&impolicy=medium",
+     "price" : "Starting at INR 8265.44",
+     "des" : "Rustic Wooden Framed Wall Mirror, Natural Wood Bathroom Vanity Mirror",
+ },
+
+ {
+    "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/b8c9ee5d9f874b3dd9a93d8e08958becf00cabca/20-in.-W-x-28-in.-L-Single-Beveled-Edge-Bath-Wall-Vanity-Mirror.jpg?imwidth=480&impolicy=medium",
+    "price" : "Starting at INR 10103.46",
+    "des"  : "Single Beveled Edge Bath Wall Vanity Mirror" 
+},
+ 
+ {
+     "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/e5c603a44bad872143940b4460698e010cf33cf2/Modern-Thin-Frame-Wall-Mounted-Hanging-Bathroom-Mirror.jpg?imwidth=480&impolicy=medium",
+     "price" : "Starting at INR 9134.19",
+     "des" : "Modern Thin Frame Wall-mounted Hanging Bathroom Vanity Wall Mirror",
+ },
+ {
+     "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/920657139fe1e074593325594d3409882e5128d6/Rustic-Wooden-Framed-Wall-Mirror%2C-Natural-Wood-Bathroom-Vanity-Mirror.jpg?imwidth=480&impolicy=medium",
+     "price" : "Starting at INR 8265.44",
+     "des" : "Rustic Wooden Framed Wall Mirror, Natural Wood Bathroom Vanity Mirror",
+ },
+ {
+     "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/fc5d25cf3e47933f90df491266bd002b5302b846/Mirror-Trend-Framed-Accent-Mirror.jpg?imwidth=480&impolicy=medium",
+     "price" : "Starting at INR 7004.25",
+     "des" : "Mirror Trend Sparkling Mosaic Framed Accent Mirror",
+ },
+{
+    "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/ee9565986c3e36baf8ae861f70e721ee894d1ec0/Mirror-Trend-Beveled-Accent-Frameless-Wall-Mirror.jpg?imwidth=480&impolicy=medium",
+    "price" : "Starting at INR 10085.11",
+    "des" : "Mirror Trend Beveled Accent Frameless Wall Mirror",
+},
+
+]
+    Item = document.querySelector(".data4")
+    items.map(function (el) {
+
+        var div3 = document.createElement("div");
+        var div4 = document.createElement("div");
+        var span1 = document.createElement("span");
+        span1.setAttribute("class", "fa fa-star checked");
+        var span2 = document.createElement("span");
+        span2.setAttribute("class", "fa fa-star checked");
+        var span3 = document.createElement("span");
+        span3.setAttribute("class", "fa fa-star checked");
+        var span4 = document.createElement("span");
+        span4.setAttribute("class", "fa fa-star checked");
+        var span5 = document.createElement("span");
+        span5.setAttribute("class", "fa fa-star");
+
+        div4.append(span1,span2,span3,span4,span5);
+        
+        var Image = document.createElement("img")
+        Image.src = el.image
+        var para3 = document.createElement("p")
+        para3.innerText = el.price;
+
+        para3.setAttribute("Id", "para2")
+        var para4 = document.createElement("p")
+        para4.setAttribute("Id", "para")
+        para4.innerText = el.des
+        div3.append(Image, para3,div4, para4);
+        div3.addEventListener("click",function(){
+            product(el)
+        })
+        Item.append(div3)
+    })
+    function product(el){
+        arr =[]
+        arr.push(el)
+        console.log("arr",arr)
+
+        localStorage.setItem("detail",JSON.stringify(arr))
+        window.location.href="products.html"
+      }
+
+</script>

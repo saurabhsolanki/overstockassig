@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+    
+    <style>
+        .checked {
+            color: orange;
+        }
+
+        h3 {
+            color: #2F3337;
+            margin-left: 20px;
+
+        }
+
+        #box {
+            display: flex;
+            width: 98%;
+            margin: 30px;
+        }
+
+        .box1>h2 {
+            color: white;
+            padding-top: 20px;
+            /* padding-left: 80px; */
+            text-align: center;
+
+        }
+        #box>div+div {
+            margin-left: -10px;
+            background-image:url(//ak1.ostkcdn.com/img/mxc/03242022_2022Spring_Bedding_AMOD.jpg?imwidth=1200&amp;impolicy=custom);
+            width: 70%;
+            height: 400px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-size: 100% 100%; */
+
+        }
+
+        #div {
+            width: 25%;
+        }
+
+        .box1 {
+            background-color: #000000A6;
+            width: 30%;
+            height: 200px;
+            margin-left: 20px;
+        }
+        #data>div{
+            border: 1px solid rgb(193, 190, 190);
+            margin: 5px;
+        }
+
+
+        .box1>h1 {
+            font-size: 70px;
+            margin-top: -25px;
+            font-family: sans-serif;
+            color: white;
+            font-weight: bold;
+            /* padding-left: 40px; */
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        h5 {
+            font-size: 20px;
+            margin-top: -20px;
+            color: white;
+            text-align: center;
+            /* padding-left: 20px; */
+
+        }
+
+        button {
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 5px;
+            color: white;
+            margin-left: 25px;
+            background-color: #000000A6;
+            padding: 10px;
+        }
+
+        body>h1 {
+            color: #2F3337;
+            font-family: sans-serif;
+            font-size: 40px;
+            margin-top: 10px;
+            margin-left: 20px;
+
+        }
+
+        #data {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        #data>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        #data>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .head {
+            text-align: center;
+            font-family: sans-serif;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .data1 {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        .data1>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        .data1>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .data2 {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        .data2>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        .data2>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .data3 {
+            display: grid;
+            margin-top: 40px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1, auto);
+
+        }
+
+        .data3>div>img {
+            width: 90%;
+            /* display: flex; */
+            margin-left: 15px;
+        }
+
+        .data3>div>p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #para {
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        #para2 {
+            width: 100%;
+            font-size: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+           <a href="https://www.overstock.com/intlcountryselect/">  <img id="flag" src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input id="search" type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc" src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png" alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart" src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png" alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
+            <a href="">Decor</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
+            <a href="">Outdorr</a>
+            
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+    </div>
+    <h3>Bedding & Bath
+        /
+        Bedding
+    </h3>
+    <h1>
+        
+        Bedding
+    </h1>
+    <div id="box">
+        <div id="div">
+            <h3>Comforter Sets</h3>
+            <h3>Quilts & Coverlets</h3>
+            <h3>Bedspreads</h3>
+            <h3>Duvet Covers & Sets</h3>
+            <h3>Blankets & Throws</h3>
+            <h3>Bedding Basics</h3>
+        </div>
+        <div>
+            <div class="box1">
+                <h2>SAVE ON TOP-RATED </h2>
+            
+                <h5>BEDDING
+                </h5>
+                <button>SHOW NOW</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Shop by Size</h2>
+        <div id="data">
+        </div>
+    </div>
+    <div>
+        <h2 class="head">Shop by Color</h2>
+        <div class="data1">
+        </div>
+    </div>
+    <div class="data3">
+    </div>
+    <footer id="footerone">
+        <div>
+            <h3>My Account</h3>
+            <p>Orders & returns</p>
+            <p>Email Preferences</p>
+            <p>Account Settings</p>
+        </div>
+        <div>
+            <h3>LET US HELP</h3>
+            <p>Contact Customer Care</p>
+            <p>Shipping Information</p>
+            <p>Return Policy</p>
+            <p>International Help</p>
+            <p>Accessibility</p>
+        </div>
+        <div>
+            <h3>COMPANY INFORMATION</h3>
+            <p>About Overstock™</p>
+            <p>Contact Us</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Sell Your Products</p>
+            <p>Supply Chain <br> Transparency</p>
+        </div>
+        <div>
+            <h3>MORE WAYS TO SHOP</h3>
+            <p>Tips & Ideas</p>
+            <p>Deals</p>
+            <p>Clearance</p>
+            <p>New Arrivals</p>
+           
+        </div>
+    </footer>
+
+    <footer id="footertwo">
+        <div> 
+         © Copyright 2022, Overstock.com®, Inc. <br> 799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+      </div>
+
+        <div id="last">
+         <div>Privacy Policy</div>
+
+         <div>Terms & Conditions</div>
+
+         <div>*Promotion Terms</div>
+
+         <div>Ship to:</div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+   size =[{
+    "image" : "https://ak1.ostkcdn.com/img/mxc/Mattresses_SBS_Twin.jpg?imWidth=320&impolicy=medium",
+    "name" : "Twin Bedding"
+},
+{
+    "image" : "https://ak1.ostkcdn.com/img/mxc/Mattresses_SBS_TwinXL.jpg?imWidth=320&impolicy=medium",
+    "name" : "Twin XL Bedding",
+},
+{
+    "image" : "https://ak1.ostkcdn.com/img/mxc/Mattresses_SBS_Full.jpg?imWidth=320&impolicy=medium",
+    "name" : "Full Bedding",
+},
+{
+    "image" : "https://ak1.ostkcdn.com/img/mxc/Mattresses_SBS_Queen.jpg?imWidth=320&impolicy=medium",
+    "name" : "Queen Bedding",
+},
+{
+    "image" : "https://ak1.ostkcdn.com/img/mxc/Mattresses_SBS_King.jpg?imWidth=320&impolicy=medium",
+    "name" : "King Bedding",
+},
+{
+    "image" : "https://ak1.ostkcdn.com/img/mxc/Mattresses_SBS_CaliforniaKing.jpg?imWidth=320&impolicy=medium",
+    "name" : "California King Bedding",
+},
+]
+
+    Type = document.getElementById("data")
+    size.map(function (ele) {
+        var divv = document.createElement("div");
+
+        var img = document.createElement("img");
+        img.src = ele.image
+        var para = document.createElement("p")
+        para.innerText = ele.name;
+
+        divv.append(img, para);
+        Type.append(divv);
+    })
+
+    color=[{
+    "image" : "https://ak1.ostkcdn.com/images/products/22671330/Madison-Park-Nollie-White-3-Piece-Tufted-Cotton-Chenille-Geometric-Duvet-Cover-Set-6e556648-fb4f-47d0-980b-0fb8593e6a05_1000.jpg?imWidth=320&impolicy=medium",
+    "name" : "White Bedding"
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/19803785/Laura-Ashley-Annalise-Bed-in-a-Bag-a390f678-3fc5-4041-90a9-46f3bc9f47b8_1000.jpg?imWidth=320&impolicy=medium",
+        "name" : "Grey Bedding",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/21211073/Madison-Park-Rianon-Navy-3-Piece-Cotton-Waffle-Weave-Duvet-Cover-Set-e64a1382-cf10-4eab-bdb3-e17e45401ad9_1000.jpg?imWidth=320&impolicy=medium",
+        "name" : "Blue Bedding",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/21416954/Madison-Park-Dillon-8-Piece-Jacquard-Comforter-Set-642b6418-4951-4b75-ae47-047daff3e180_1000.jpg?imWidth=320&impolicy=medium",
+        "name" : "Brown Bedding",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/20651971/The-Curated-Nomad-Clementina-Ivory-Cotton-Printed-Chenille-3-piece-Comforter-Set-7c02fe39-143e-4f4e-b481-39b39cc8afbb_1000.jpg?imWidth=320&impolicy=medium",
+        "name" : "Off-White Bedding"
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/28072896/Madison-Park-Sisley-Dusty-Rose-Ruched-Rosette-2-in-1-Duvet-Cover-Set-0f44e4e3-1b17-4e6e-9efc-262b21cb7d1b_1000.jpg?imWidth=320&impolicy=medium",
+        "name" : "Pink Bedding"
+    }
+
+
+    ]
+    Shape = document.querySelector(".data1")
+    color.map(function (el) {
+        var div1 = document.createElement("div");
+        var Image = document.createElement("img")
+        Image.src = el.image
+        var para1 = document.createElement("p")
+        para1.innerText = el.name;
+        div1.append(Image, para1);
+        Shape.append(div1)
+    })
+  
+items =[
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/5eb7250d9eac5f325d996e0dce851945b99f4fbd/Intelligent-Design-Leena-Shaggy-Faux-Fur-Comforter-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 5744.82",
+        "des" : "Leena Shaggy Faux Fur Comforter Set by Intelligent Design",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/0b31c2192e16b94cd8cf20615e5f8501af4a7ecb/Soft-Essentials-Ultra-Soft-3-piece-Duvet-Cover-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 2892.95",
+        "des" : "Soft Essentials Oversized 3-piece Microfiber Duvet Cover Set",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/72d027124d511d7eae13149a3c5c6e6ec76b5965/MarCielo-3-Piece-Printed-Quilt-Set-Lightweight-Bedspread-Set-By014.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 5372.49",
+        "des" : "MarCielo 3 Piece Printed Quilt Set Lightweight Bedspread Set By014",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/ab7557a4ab9db1aa8fe8b9734f9a6304b233324e/Superior-All-season-Luxurious-100-Percent-Cotton-Metro-Blanket.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 3076.49",
+        "des" : "Superior Metro All-season Cotton Blanket",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/562040ec56286b6218c00a9e76b80a9641c71e58/Nanshing-Kath-7-piece-Comforter-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 8128.22",
+        "des" : "Grand Avenue Daniella 7-Piece Modern Geometric Comforter Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/cffa359d60ab3076e9615558561a12385d94ed12/Serenta-9-pc.-Cal-King-Printed-Striped-Cotton-Blend-Bed-Coverlet-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 11320.07",
+        "des" : "Serenta 9-pc. Cal King Printed Striped Cotton Blend Bed Coverlet Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/2af0dce795b88bd69bfb26172ec79fb554f8c6fe/Becky-Cameron-Premium-Down-Alternative-Forget-Me-Not-Reversible-Comforter-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 4959.09",
+        "des" : "Becky Cameron Premium Forget Me Not Reversible Comforter Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/18653687/All-Natural-Luxurious-Soft-Prewashed-Yarn-Dye-Cotton-Chambray-Duvet-Cover-Set-4c5ba540-f737-45b6-9800-8579f6c316be_600.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 4131.41",
+        "des" : "Swift Home All Natural Luxurious Prewashed Cotton Chambray Duvet Cover Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/0750fa42af5ee7765c370d08580fe281ed83dc12/Madison-Park-Mansfield-6-Piece-Reversible-Daybed-Cover-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 5910.00",
+        "des" : "Madison Park Mansfield 6 Piece Reversible Daybed Cover Set",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/5eb7250d9eac5f325d996e0dce851945b99f4fbd/Intelligent-Design-Leena-Shaggy-Faux-Fur-Comforter-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 5744.82",
+        "des" : "Leena Shaggy Faux Fur Comforter Set by Intelligent Design",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/0b31c2192e16b94cd8cf20615e5f8501af4a7ecb/Soft-Essentials-Ultra-Soft-3-piece-Duvet-Cover-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 2892.95",
+        "des" : "Soft Essentials Oversized 3-piece Microfiber Duvet Cover Set",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/72d027124d511d7eae13149a3c5c6e6ec76b5965/MarCielo-3-Piece-Printed-Quilt-Set-Lightweight-Bedspread-Set-By014.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 5372.49",
+        "des" : "MarCielo 3 Piece Printed Quilt Set Lightweight Bedspread Set By014",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/ab7557a4ab9db1aa8fe8b9734f9a6304b233324e/Superior-All-season-Luxurious-100-Percent-Cotton-Metro-Blanket.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 3076.49",
+        "des" : "Superior Metro All-season Cotton Blanket",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/562040ec56286b6218c00a9e76b80a9641c71e58/Nanshing-Kath-7-piece-Comforter-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 8128.22",
+        "des" : "Grand Avenue Daniella 7-Piece Modern Geometric Comforter Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/cffa359d60ab3076e9615558561a12385d94ed12/Serenta-9-pc.-Cal-King-Printed-Striped-Cotton-Blend-Bed-Coverlet-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 11320.07",
+        "des" : "Serenta 9-pc. Cal King Printed Striped Cotton Blend Bed Coverlet Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/2af0dce795b88bd69bfb26172ec79fb554f8c6fe/Becky-Cameron-Premium-Down-Alternative-Forget-Me-Not-Reversible-Comforter-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 4959.09",
+        "des" : "Becky Cameron Premium Forget Me Not Reversible Comforter Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/18653687/All-Natural-Luxurious-Soft-Prewashed-Yarn-Dye-Cotton-Chambray-Duvet-Cover-Set-4c5ba540-f737-45b6-9800-8579f6c316be_600.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 4131.41",
+        "des" : "Swift Home All Natural Luxurious Prewashed Cotton Chambray Duvet Cover Set",
+    },
+     {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/0750fa42af5ee7765c370d08580fe281ed83dc12/Madison-Park-Mansfield-6-Piece-Reversible-Daybed-Cover-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 5910.00",
+        "des" : "Madison Park Mansfield 6 Piece Reversible Daybed Cover Set",
+    },
+    {
+        "image" : "https://ak1.ostkcdn.com/images/products/is/images/direct/5eb7250d9eac5f325d996e0dce851945b99f4fbd/Intelligent-Design-Leena-Shaggy-Faux-Fur-Comforter-Set.jpg?imwidth=480&impolicy=medium",
+        "price" : "Starting at INR 5744.82",
+        "des" : "Leena Shaggy Faux Fur Comforter Set by Intelligent Design",
+    },
+]
+
+
+    Item = document.querySelector(".data3")
+    items.map(function (el) {
+
+        var div3 = document.createElement("div");
+        var div4 = document.createElement("div");
+        var span1 = document.createElement("span");
+        span1.setAttribute("class", "fa fa-star checked");
+        var span2 = document.createElement("span");
+        span2.setAttribute("class", "fa fa-star checked");
+        var span3 = document.createElement("span");
+        span3.setAttribute("class", "fa fa-star checked");
+        var span4 = document.createElement("span");
+        span4.setAttribute("class", "fa fa-star checked");
+        var span5 = document.createElement("span");
+        span5.setAttribute("class", "fa fa-star");
+
+        div4.append(span1,span2,span3,span4,span5);
+        
+        var Image = document.createElement("img")
+        Image.src = el.image
+        var para3 = document.createElement("p")
+        para3.innerText = el.price;
+
+        para3.setAttribute("Id", "para2")
+        var para4 = document.createElement("p")
+        para4.setAttribute("Id", "para")
+        para4.innerText = el.des
+        div3.append(Image, para3,div4, para4);
+        div3.addEventListener("click",function(){
+            product(el)
+        })
+        Item.append(div3)
+    })
+      function product(el){
+        arr =[]
+        arr.push(el)
+        console.log("arr",arr)
+
+        localStorage.setItem("detail",JSON.stringify(arr))
+        window.location.href="products.html"
+      }
+</script>
