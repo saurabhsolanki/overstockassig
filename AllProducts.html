@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LRFurniture.css">
+    <title>All Products</title>
+
+    <style>
+          *{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#nav{
+    width: 100%;
+    /* position: fixed; */
+    border: none;
+    
+    }
+
+#one{
+    display: flex;
+    font-size: 15px;
+    background-color: rgb(247, 247, 247);
+    /* align-items: flex-start; */
+
+}
+#flag{
+    height: 20px;
+    border-radius: 100%;
+    /* border: 1px solid red; */
+    margin-top: 8px;
+}
+        #one>p{
+            font-size: 15px;
+            margin: 10px;
+        }
+
+
+
+#two{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* margin: auto; */
+}
+#logo>img{
+    height: 40px;
+    width: auto;
+    margin-left: -20px;
+}
+#two>div:nth-child(1){
+    width: 10%;
+    /* border: 1px solid red; */
+}
+#two>div:nth-child(2){
+
+    width: 60%;
+}
+#two>div>input{
+    width: 100%;
+    /* padding: 10px; */
+}
+
+#two>div:nth-child(3){
+    width: auto;
+    display: flex;
+}
+#two-img img{
+    height: 30px;
+    margin: 10px;
+}
+#gotopayment{
+    cursor: pointer;
+}
+
+
+
+#three{
+    width: auto;
+    font-size: 16px;
+    margin: 0px;
+    /* font-weight: bold; */
+    border: 1px solid rgb(199, 197, 197);
+    /* background-color: rgb(235, 234, 234); */
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+}
+#three>a{
+    /* margin: 10px; */
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#three>a:hover{
+    border-bottom: 2px solid black;
+}
+#three>a:nth-last-child(1){
+    color: rgb(207, 77, 77);
+}
+
+/* footer one  */
+#footerone{
+   
+    background-color: #444;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: small;
+    border: none;
+
+}
+#footerone h3{
+    color: white;
+    text-align:left;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footerone p{
+    color: white;
+    /* margin: auto; */
+    text-align:left;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footerone>div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+/* footer two */
+#footertwo{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44, 43, 43);
+    padding: 30px;
+    color: white;
+
+    /* width: 100%; */
+    border: none;
+}
+
+#last{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+img,p{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div1 css */
+
+#heading{
+    width: 98%;
+    margin: auto;
+}
+#div1{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 60px;
+    
+}
+#divimg{
+    margin: auto;
+    width: 80%;
+}
+#divimg>img{
+    width:100%;
+    height:400px;
+    margin: auto;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    
+}
+#navigation>:nth-child(7){
+    color:#c7202c;
+}
+#extra15{
+background: rgba(0,0,0,.65);
+cursor: pointer;
+width: 30%;
+color: white;
+top: 320px;
+margin-left: 55px;
+padding-top: 20px;
+line-height: 0rem;
+position: absolute;
+text-align: center;
+
+}
+#but1st{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    width: 90%;
+    height: 35px;
+    margin-bottom: 20px;
+    
+    cursor: pointer;   
+}
+#extra15>h1{
+    font-size: 80px;
+        
+}
+#extra15>h4{
+    font-size: 24px;
+   
+}
+#extra15>p{
+    font-size: 20px;
+    line-height: 5px;
+    
+}
+#navigation{
+    margin: auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+#locate{
+    display: flex;
+}
+
+/* div2 css */
+#div2>h2{
+    text-align: center;
+}
+#catagory{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(6,auto);
+    
+    
+    justify-content: space-around;
+}
+.catpr{
+    
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+.catpr>img{
+    width: 100%;
+    height: 200px;
+}
+
+  /* product div */
+#prosec{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+#scroll{
+    width: 20%;
+    height: 500px;
+    overflow-x: hidden;
+    position: sticky;
+    top: 0px; 
+}
+
+#scroll>div{
+    height: 200px;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    width: 75%;
+    height: auto;
+    
+    gap: 20px;
+}
+.card{
+    width: 100%;
+    border: 1px solid rgb(187, 183, 183);
+    margin: auto;  
+}
+.card>h4{
+    margin-left: 10px;
+}
+.card>p{
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.star{
+    height: 20px;
+    width: 30%;
+    margin-left: 10px;
+}
+.primg{
+    width: 100%;
+    height: auto;
+}
+#rating{
+    display: flex;
+}
+#sort{
+    display: flex;
+    margin-right: 15px;
+    justify-content: end;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#select{
+    width: 15%;
+    font-size: 15px;  
+}
+
+#scroller{
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    border: 1px solid rgb(240, 230, 230);
+    cursor: pointer;
+}
+button{
+    
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    border: 0px;
+}
+button:hover{
+   background-color: black;
+   color: white;
+   cursor: pointer;
+}
+#btn{
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+#mn{
+   width: 100%;
+   justify-content: space-around;
+   display: flex;
+}
+#mn>:nth-child(1){
+    
+    width: 20%;
+    height: 300px;
+    
+}
+#mn>:nth-child(2){
+   
+    width: 75%;
+    height: auto;
+    
+}
+#btmcard{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    cursor: pointer;
+   
+}
+#btmcardC{
+    display: flex;
+    width: 49%;
+    height: auto;
+    border: rgb(165, 161, 161) 1px solid;    
+}
+#btmcardC>:nth-child(1){
+   height: auto;
+   margin-bottom: -4px;
+    
+}
+#btmcardC>div>h3{
+    font-size: 26px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#btmcardC>div>p{
+    font-size: 18px;
+   margin-left: 10px;
+   margin-top: -30px;
+}
+#btmcardC>:nth-child(2)>img{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+#lastline{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(212, 203, 203);
+}
+
+    </style>
+   
+</head>
+<body>
+
+      <!--------------------------------------------- Navigation Bar ------------------------------------>
+      <div id="nav">
+
+        <div id="one">
+            <p>Ship to:</p>
+           <a href="https://www.overstock.com/intlcountryselect/">  <img id="flag" src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt=""> </a>
+            <p>India</p>
+        </div>
+
+        <div id="two">
+            <div id="logo">
+            <img src="https://logos-download.com/wp-content/uploads/2017/01/Overstock_logo-700x199.png" alt="">
+            </div>
+
+            <div>
+                <input id="search" type="text" placeholder="Search">
+            </div>
+
+            <div id="two-img">
+                <img id="acc" src="https://www.kindpng.com/picc/m/10-109825_my-account-icon-vector-png-transparent-png.png" alt="">
+                <img id="whislist" src="https://icon-library.com/images/wishlist-icon/wishlist-icon-0.jpg" alt="">
+                <img id="cart" src="https://www.pinclipart.com/picdir/big/83-831322_shopping-cart-logo-png-white-clipart.png" alt="">
+                <button id="gotopayment">Checkout</button>
+            </div>
+        </div>
+
+        <div id="three">
+            <a href="">Furnitue</a>
+            <a href="">Rugs</a>
+            <a href="">Decor</a>
+            <a href="">Bed & Bath</a>
+            <a href="">Home Improvement</a>
+            <a href="">Kitchen</a>
+            <a href="">Outdorr</a>
+            
+            <a href="">Jewelry</a>
+            <a href="">Lightning</a>
+            <a href="">More</a>
+            <a href="">|</a>
+            <a href="">Ideas</a>
+            <a href="">Sales & Deals</a>
+        </div>
+    </div>
+
+
+
+
+         <!-------------------------------------------- heading ------------------------------------------>
+    <div id="heading">
+       <div id="locate">
+           <p>Furniture
+            /
+            Bathroom Furniture
+            /
+            Bathroom Vanities</p>
+           
+       </div>
+        <h1>Bathroom Vanities</h1>
+        <div id="div1">
+            <div id="navigation">
+                <p>Sofas & Couches</p>
+                <p>Sectional Sofas</p>
+                <p>Cofee,Sofa & End Tables</p>
+                <p>Accent Chairs</p>
+                <p>Living Room Sets</p>
+                <p>TV Stands</p>
+               
+                <p>Shop All living Room <br> Furniture on Sale</p>
+            </div>
+            <div id="divimg">
+                <img src="https://ak1.ostkcdn.com/img/mxc/Q3_2018_1900x950_058-BathroomVanities-SUB-6405.jpg?imwidth=1200&impolicy=custom" width="600">
+                <div id="extra15">
+                    <p>EXTRA</p>
+                    <h1>10%</h1>
+                    <P>OFF SELECT BATHROOM VANITIES*</P>
+                   <input type="submit" value="SHOP NOW" id="but1st">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="div2">
+        <!-- product by catagory -->
+        <h2>Shop By Type</h2>
+        <div id="catagory">
+           
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/20178125/Holly-Martin-Tobin-Limed-Burnt-Oak-w-Marble-Bath-Vanity-Sink-eb53f2a8-dad7-4fd6-b5ad-8d80f61231ea.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Single Vanities</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/28807308/Madison-60-Inch-Double-Sink-Carrara-White-Marble-Vanity-In-Monarch-Blue-a51ec3e5-8caf-4b1d-9a5f-5c847ce03e39.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Double Vanities</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/17215280/Virtu-USA-Zuri-55-inch-Double-Bathroom-Vanity-Set-with-Faucet-Options-adb9aabb-3e8e-4a03-b229-7aa840726223.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Floating Vanities</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/img/mxc/08192019_058_bathroomVanities_1-4.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Corner Vanities</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/27989476/Strick-Bolton-Yatesling-Modern-White-Marble-Vanity-9cc5dc6d-a260-4a9f-8f3d-e1af581206a7.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Freestanding</p>
+            </div>
+         
+        </div>
+
+    </div>
+    <div id="div2">
+        <!-- product by catagory -->
+        <h2>Top Trending</h2>
+        <div id="catagory">
+           
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/dfd768dd6f5ec2fc877af8695096a5ff4e9942e4/Copper-Grove-Dhi-Upholstered-Armchair.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Living Room Chairs</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/14741699/Christopher-Knight-Home-Yuny-Round-Fabric-Ottoman-Pouf-43157217-9e91-49f5-9440-a293f5a47a18_1000.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Ottomans & Storage <br> Ottomans</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/a32ab49e9155e1abe7a5903331149853a3e02c18/Carson-Carrington-Hedeby-Upholstered-Fabric-Loveseat.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Loveseats</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/0485073b17812f0a60e7686583f28e805f0aeac8/Ramses-Modern-Grey-Bookcase-Display-Cabinet.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Bookshelves & <br> Bookcases</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/b6158f17126c52bc350f84c94db20fa716543fce/Abbyson-Carson-Mid-century-Tufted-Convertible-Futon-Sleeper-Sofa.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Futons </p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/bf33b0970649fedab76cbe0913b1911ddc4ea7f6/Morgan-Creek-Antique-White-Storage-Hall-Bench.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Benches & Settees</p>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id="div2">
+        <!-- product by catagory -->
+        <h2>Shop Our Style</h2>
+        <div id="catagory">
+           
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD1_ModernandContemporaryLivingRoomFurniture.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Morden & Cpntemporary <br> Living Room Furniture</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD2_RusticLivingRoomFurniture.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Rustic Living Room <br> Furniture</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD3_FarmhouseLivingRoomFurniture.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Farmhouse Living Room <br> Furniture</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD4_TraditionalLivingRoomFurniture.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Tradional Living Room <br> Furniture</p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD5_MidCenturyModernLivingRoomFurniture.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Mid-Century Morden <br> Living Room Furniture </p>
+            </div>
+            <div class="catpr">
+                <img src="https://ak1.ostkcdn.com/img/mxc/10222019_LRFurni_z_ThirdBMOD6_NauticalandCoastalLivingRoomFurniture.jpg?imWidth=320&impolicy=medium" alt="">
+                <p>Nautical & Coastal Living <br> Room Furniture</p>
+               
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<div id="sort">
+    <p>Sort by :</p>
+    <select name="Sort" id="select">
+        <option value="Best Selling">Best Selling</option>
+        <option value="">On Sale</option>
+        <option value="">Price Low - High</option>
+        <option value="">Price High - Low</option>
+        <option value="">Customer Rating</option>
+        <option value="">New Arrival</option>
+
+    </select>
+</div>
+
+<div id="prosec">
+    <div id="scroll">
+        <select name="Catagories" id="scroller">
+            <option value="">Catagories</option>
+          
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Sales & Promotions</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Price</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Styles</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Colors</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Brands</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Meterials</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Assembly</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Customer Ratings</option>
+        </select>
+        <select name="Catagories" id="scroller">
+            <option value="">Availability</option>
+        </select>
+            <div>
+
+            </div>
+       
+       
+           
+        
+    </div>
+    <div id="products">
+        <div class="card" >
+            <img class="primg" src="https://ak1.ostkcdn.com/images/products/is/images/direct/42ded2fa37088e50fde448e03a87c57c851a296b/Delicia-3-Piece-Living-Room-Set-with-Golden-Legs.jpg?imwidth=480&impolicy=medium" alt="">
+            <h4>Starting at INR 66723.55</h4>
+            <img class="star" src="https://www.pngplay.com/wp-content/uploads/6/Golden-5-Star-Rating-PNG.png" alt="">
+            <p>Delicia 3 Piece Living Room Set with Golden <br> Legs</p>
+        </div>
+        <div id="primg2" class="card">
+            <img class="primg" src="https://ak1.ostkcdn.com/images/products/is/images/direct/08b80a67acf1c5ff748b98e4c070d2f09c789764/Carson-Carrington-Telsiai-Triangle-Wood-Coffee-Table.jpg?imwidth=480&impolicy=medium" alt="">
+            <h4>Starting at INR 15765.24</h4>
+            <img class="star" src="https://www.pngplay.com/wp-content/uploads/6/Golden-5-Star-Rating-PNG.png" alt="">
+            <p>Carson Carrington Telsiai Triangular Wood <br> Coffee Table</p>
+        </div>
+        <div class="card">
+            <img class="primg" src="https://ak1.ostkcdn.com/images/products/is/images/direct/5660fe85d771ae78e9418e8d18421c17365fc26f/Rustic-Farmhouse-Tray-Top-End-Table.jpg?imwidth=480&impolicy=medium" alt="">
+            <h4>Starting at INR 9923</h4>
+            <img class="star" src="https://www.pngplay.com/wp-content/uploads/6/Golden-5-Star-Rating-PNG.png" alt="">
+            <p>COZAYH Rustic Farmhouse Tray Top End <br> Table</p>
+        </div>
+        <div class="card">
+            <img class="primg" src="https://ak1.ostkcdn.com/images/products/is/images/direct/b08e53c50d7978abf463e3685b0ccbd3011ddf16/Luxe-Combo-Console-Table.jpg?imwidth=480&impolicy=medium" alt="">
+            <h4>Starting at INR 12991.78</h4>
+            <img class="star" src="https://www.pngplay.com/wp-content/uploads/6/Golden-5-Star-Rating-PNG.png" alt="">
+            <p>Luxe Combo Console <br> Table </p>
+        </div>
+        <div class="card">
+            <img class="primg" src="https://ak1.ostkcdn.com/images/products/is/images/direct/e90b97894ed9e636f3bae421eb653a11e86c8a77/COZAYH%C2%A0Rustic%C2%A0Farmhouse%C2%A0Cottagecore%C2%A0Coffee%C2%A0Table.jpg?imwidth=480&impolicy=medium" alt="">
+            <h4>Starting at INR 20727.90</h4>
+            <img class="star" src="https://www.pngplay.com/wp-content/uploads/6/Golden-5-Star-Rating-PNG.png" alt="">
+            <p>COZAYH Rustic Farmhouse Cottagecore <br> Coffee Table</p>
+        </div>
+        <div class="card">
+            <img class="primg" src="https://ak1.ostkcdn.com/images/products/27989464/Simple-Living-Margo-TV-Stand-1ac91683-01d8-4d0e-a9ab-6d4364a779a0_600.jpg?imwidth=480&impolicy=medium" alt="">
+            <h4>Starting at INR 25408.65</h4>
+            <img class="star" src="https://www.pngplay.com/wp-content/uploads/6/Golden-5-Star-Rating-PNG.png" alt="">
+            <p>Simple Living Margo Mid-century Modern <br> Wood TV Stand</p>
+        </div>  
+    </div>
+</div>
+<div id="mn">
+    <div></div>
+    <div>
+        <div id="btn">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+        </div>
+        <div id="btmcard">
+            <div id="btmcardC">
+                <div><img src="https://ak1.ostkcdn.com/img/mxc/Mid-Banner_coop_pb_36831622_S.jpg" alt=""></div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/CHRISTOPHERKNIGHT-LOGO-D-MOD.png" alt="">
+                    <h3>Extra 15% off</h3>
+                    <p>Select Petio Furniture*</p>
+                </div>
+            </div>
+            <div id="btmcardC">
+                <div><img src="https://ak1.ostkcdn.com/img/mxc/Mid-Banner_coop_pb_34869804_S.jpg" alt=""></div>
+                <div>
+                    <img src="https://ak1.ostkcdn.com/img/mxc/JONATHANY_v2-LOGO-D-MOD.png" alt="">
+                    <h3>Extra 10% off</h3>
+                    <p>Select Area Rugs*</p>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div> 
+
+<div id="lastline">
+    <hr>
+</div>
+
+
+
+
+
+
+
+
+  <!-------------------------------- footer--------------------------------------------->
+  <footer id="footerone">
+    <div>
+        <h3>My Account</h3>
+        <p>Orders & returns</p>
+        <p>Email Preferences</p>
+        <p>Account Settings</p>
+    </div>
+    <div>
+        <h3>LET US HELP</h3>
+        <p>Contact Customer Care</p>
+        <p>Shipping Information</p>
+        <p>Return Policy</p>
+        <p>International Help</p>
+        <p>Accessibility</p>
+    </div>
+    <div>
+        <h3>COMPANY INFORMATION</h3>
+        <p>About Overstock™</p>
+        <p>Contact Us</p>
+        <p>Careers</p>
+        <p>Investor Relations</p>
+        <p>Sell Your Products</p>
+        <p>Supply Chain <br> Transparency</p>
+    </div>
+    <div>
+        <h3>MORE WAYS TO SHOP</h3>
+        <p>Tips & Ideas</p>
+        <p>Deals</p>
+        <p>Clearance</p>
+        <p>New Arrivals</p>
+       
+    </div>
+</footer>
+
+<footer id="footertwo">
+    <div> 
+     © Copyright 2022, Overstock.com®, Inc. <br> 799 Coliseum Way Midvale, UT 84047 | 1-800-843-2446
+  </div>
+
+    <div id="last">
+     <div>Privacy Policy</div>
+
+     <div>Terms & Conditions</div>
+
+     <div>*Promotion Terms</div>
+
+     <div>Ship to:</div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+<script>
+    document.querySelector(".primg").addEventListener("click",myFunction);
+
+    function myFunction(){
+        window.location.href="product1.html"; 
+    }
+
+    document.querySelector("#primg2").addEventListener("click",myFunction);
+
+function myFunction(){
+    window.location.href="product2.html"; 
+}
+</script>
