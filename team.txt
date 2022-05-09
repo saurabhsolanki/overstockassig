@@ -1,0 +1,6 @@
+team member name and their work
+1. Saurabh Solanki -- navigation bar, signup and login page, payment page and landing page 
+2. Abhishek Sarkar -- bed and bath page, decorative page, and their products
+3. Mukesh Sahu -- Furniture page, Rugs page and their products page.
+4. Vishal Mandloi -- Kitchen page, Mirror page and their products.
+
