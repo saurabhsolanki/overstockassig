@@ -1,3 +1,7 @@
+web site -- OverStocking  (https://www.overstock.com/)
+IA -- Mohd Tazammul
+
+
 team member name and their work
 1. Saurabh Solanki -- navigation bar, signup and login page, payment page and landing page 
 2. Abhishek Sarkar -- bed and bath page, decorative page, and their products
